@@ -1,5 +1,7 @@
 # OpenAI Codexのベストプラクティス まとめ
 
+[ベストプラクティス](https://developers.openai.com/codex/learn/best-practices)
+
 基本的な考え方
 
 Codexは「一回使い捨てのツール」ではなく、育てていくチームメンバーとして扱うのが効果的。
