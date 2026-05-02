@@ -23,18 +23,38 @@ OpenAIの公式資料を横断すると、Codexの実務運用は以下の原則
 
 ### 3. フィードバックループ
 
-Prompt → Plan → Rules → Implementation → Validation → 改善
+```txt
+Prompt
+  ↓
+Plan
+  ↓
+Rules (AGENTS.md)
+  ↓
+Implementation
+  ↓
+Validation
+  ↓
+改善（AGENTS / skill / plan更新）
+```
 
 ## ディレクトリ構成
 
+```txt
 repo/
 ├─ AGENTS.md
 ├─ .codex/
-├─ .agents/skills/
+│   ├─ config.toml
+│   └─ hooks/
+├─ .agents/
+│   └─ skills/
 ├─ docs/
+│   ├─ specs/
+│   ├─ validation/
+│   └─ architecture/
 ├─ plans/
 ├─ evals/
 └─ .github/workflows/
+```
 
 ## 重要ルール
 
