@@ -1,9 +1,9 @@
 # AGENTS / config / skills / hooks の役割
 
 > 種別: official
-> 原典: [best-practices](https://developers.openai.com/codex/learn/best-practices)
+> 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
 > 最終ファクトチェック: 2026-05-04
-> 確認メモ: 原典をもとに運用要素の役割を再整理
+> 確認メモ: 参考元をもとに運用要素の役割を再整理
 
 ## 概要
 
@@ -73,6 +73,9 @@ hook:
 - 変更後のチェックコマンド案内
 ```
 
-## 原典
+## 参考元
+
+このページは以下の参考元に基づいて整理しています。未確認の推測は含めていません。
 
 - https://developers.openai.com/codex/learn/best-practices
+- https://help.openai.com/en/articles/11369540-codex-in-chatgpt

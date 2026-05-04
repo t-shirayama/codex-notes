@@ -1,6 +1,9 @@
 # AI駆動開発ワークフロー概要
 
-> 出典: [CyberAgent Developers Blog](https://developers.cyberagent.co.jp/blog/archives/62010/)
+> 種別: curation
+> 参考元: [CyberAgent Developers Blog](https://developers.cyberagent.co.jp/blog/archives/62010/)
+> 最終ファクトチェック: 2026-05-04
+> 確認メモ: 元記事の構成と、このリポジトリ向けの整理方針を確認
 
 OpenAIのCodexに代表される「大規模なコードコンテキストを理解するAIモデル」のポテンシャルを引き出すための、フェーズ分割型ワークフローです。
 
@@ -53,3 +56,9 @@ feature-request-board/
 ## 具体例
 
 新機能を作る前に `requirement.md` と `plan.md` を先に作っておくと、Codexに「どこまで決まっているか」を毎回説明せずに済みます。
+
+## 参考元
+
+このページは以下の参考元に基づいて整理しています。未確認の推測は含めていません。
+
+- https://developers.cyberagent.co.jp/blog/archives/62010/

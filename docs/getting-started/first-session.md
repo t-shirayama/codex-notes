@@ -1,5 +1,10 @@
 # 最初の1セッションの進め方
 
+> 種別: official
+> 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
+> 最終ファクトチェック: 2026-05-04
+> 確認メモ: 1タスク1スレッドと計画先行の考え方を確認
+
 ## 概要
 
 Codexを最初から上手く使うコツは、いきなり大きい依頼を投げずに、1セッション1目的で進めることです。
@@ -46,3 +51,10 @@ Codexを最初から上手く使うコツは、いきなり大きい依頼を投
 ## 具体例
 
 「このエラーを直して」だけではなく、「`@api.ts` の 401 エラー処理を修正し、再発防止のテスト案も出して」と書くと、Codexが動きやすくなります。
+
+## 参考元
+
+このページは以下の参考元に基づいて整理しています。未確認の推測は含めていません。
+
+- https://developers.openai.com/codex/learn/best-practices
+- https://platform.openai.com/docs/guides/prompting

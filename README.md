@@ -68,7 +68,7 @@ Use $url-to-markdown-summary to re-check this official article against its sourc
 ```
 
 ```txt
-この curation 記事を原典URLで見直して、古くなった主張があれば修正案を出して。
+この curation 記事を参考元で見直して、古くなった主張があれば修正案を出して。
 最終ファクトチェック日と確認メモも更新して。
 ```
 
@@ -78,4 +78,4 @@ Use $url-to-markdown-summary to re-check this official article against its sourc
 
 URLを渡して最初から保存用Markdown記事を作りたいときは、`.agents/skills/url-to-markdown-summary/` のskill設計と `docs/templates/official-summary.md` / `docs/templates/curation-summary.md` を見ると運用しやすいです。
 
-記事を増やしてきたら、`docs/operations/article-registry.md` に原典URLと最終ファクトチェック日を残しておくと、どこを再確認すべきか追いやすくなります。
+記事を増やしてきたら、`docs/operations/article-registry.md` に参考元と最終ファクトチェック日を残しておくと、どこを再確認すべきか追いやすくなります。

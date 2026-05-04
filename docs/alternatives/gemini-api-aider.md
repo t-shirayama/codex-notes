@@ -59,7 +59,9 @@ aider --model gemini/gemma-4-31b-it --no-auto-commits
 
 まずはAiderで `READMEを更新して` のような小タスクを試し、次にCodexで `AGENTS.md を整備して` と依頼すると、ツールごとの得意不得意を比較しやすくなります。
 
-## 参考リンク
+## 参考元
+
+このページは以下の参考元に基づいて整理しています。未確認の推測は含めていません。
 
 - [Google AI Studio](https://aistudio.google.com)
 - [Gemini APIでGemmaを使う](https://ai.google.dev/gemma/docs/core/gemma_on_gemini_api)

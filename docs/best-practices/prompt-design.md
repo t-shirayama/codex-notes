@@ -1,5 +1,10 @@
 # プロンプト設計の基本
 
+> 種別: official
+> 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
+> 最終ファクトチェック: 2026-05-04
+> 確認メモ: プロンプト設計の基本要素と明確な指示の重要性を確認
+
 ## 概要
 
 Codexに強い出力をしてもらうには、長い説明より「何を」「どこで」「どこまで」を揃えることが重要です。
@@ -56,3 +61,11 @@ Codexに強い出力をしてもらうには、長い説明より「何を」「
 - `いい感じに直して`
 - `全部見て必要なら修正して`
 - 背景だけ長く、変更対象がない
+
+## 参考元
+
+このページは以下の参考元に基づいて整理しています。未確認の推測は含めていません。
+
+- https://developers.openai.com/codex/learn/best-practices
+- https://platform.openai.com/docs/guides/prompt-engineering/strategies-to-improve-reliability
+- https://platform.openai.com/docs/guides/prompting

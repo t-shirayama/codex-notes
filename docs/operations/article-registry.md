@@ -2,28 +2,33 @@
 
 ## 概要
 
-この台帳では、`docs/official/` と `docs/curation/` の記事について、原典URLと最終ファクトチェック日を記事ごとに管理します。
+この台帳では、`docs/official/` と `docs/curation/` の記事について、参考元と最終ファクトチェック日を記事ごとに管理します。
+このリポジトリでは、参考元のある内容だけを残し、未確認の推測は断定しない方針で管理します。
 
 ## ステータスの意味
 
-- `checked`: 現時点の原典と照合済み
-- `needs-review`: 原典更新や本文見直しの可能性がある
+- `checked`: 現時点の参考元と照合済み
+- `needs-review`: 参考元更新や本文見直しの可能性がある
 - `draft`: 下書き段階
 
-`checked` は恒久的な正確性保証ではなく、記録日時点で原典を確認したことを意味します。
+`checked` は恒久的な正確性保証ではなく、記録日時点で参考元を確認したことを意味します。
 
 ## Articles
 
-| 記事タイトル | パス | 種別 | 原典URL | 最終ファクトチェック日 | ステータス | メモ |
+| 記事タイトル | パス | 種別 | 参考元 | 最終ファクトチェック日 | ステータス | メモ |
 | --- | --- | --- | --- | --- | --- | --- |
-| 公式ベストプラクティス要約 | `docs/official/best-practices.md` | `official` | `https://developers.openai.com/codex/learn/best-practices` | `2026-05-04` | `checked` | 原典リンクと要約構成を確認 |
-| AGENTS / config / skills / hooks の役割 | `docs/official/agents-config-skills-hooks.md` | `official` | `https://developers.openai.com/codex/learn/best-practices` | `2026-05-04` | `checked` | 既存説明を原典ベースの運用解説として整理 |
-| AGENTS.md設計パターン集 | `docs/curation/agents-md-patterns.md` | `curation` | 記事群ベース。追加時に原典URLを追記する | `2026-05-04` | `needs-review` | 原典URL未登録。今後追加前提 |
-| 複数エージェント運用メモ | `docs/curation/multi-agent-workflows.md` | `curation` | 記事群ベース。追加時に原典URLを追記する | `2026-05-04` | `needs-review` | 原典URL未登録。今後追加前提 |
+| 公式ベストプラクティス要約 | `docs/official/best-practices.md` | `official` | `https://developers.openai.com/codex/learn/best-practices` | `2026-05-04` | `checked` | 参考元リンクと要約構成を確認 |
+| AGENTS / config / skills / hooks の役割 | `docs/official/agents-config-skills-hooks.md` | `official` | `https://developers.openai.com/codex/learn/best-practices`<br>`https://help.openai.com/en/articles/11369540-codex-in-chatgpt` | `2026-05-04` | `checked` | 参考元ベースの運用解説として整理 |
+| AGENTS.md設計パターン集 | `docs/curation/agents-md-patterns.md` | `curation` | `https://zenn.dev/redamoon/articles/article27-agents`<br>`https://zenn.dev/unikoukokun/articles/333be4765ec62a` | `2026-05-04` | `checked` | 参考元を追加し、要点と記述パターンを照合 |
+| 複数エージェント運用メモ | `docs/curation/multi-agent-workflows.md` | `curation` | `https://zenn.dev/zenchaine/articles/codex-multi-agent-vs-claude-code`<br>`https://qiita.com/syonon/items/b75a50bf81cb723fda1c` | `2026-05-04` | `checked` | 参考元を追加し、並列分担の要点を確認 |
 
 ## 更新ルール
 
 - 記事を新規作成したら、この台帳にも1行追加する
-- 記事の原典を見直したら、本文の `最終ファクトチェック` とこの台帳の両方を更新する
-- 複数原典がある場合は、同じセル内で改行または箇条書きで残してよい
+- 記事の参考元を見直したら、本文の `最終ファクトチェック` とこの台帳の両方を更新する
+- 複数参考元がある場合は、同じセル内で改行または箇条書きで残してよい
 - 変更がない場合も `最終ファクトチェック日` とメモは更新してよい
+
+## 参考元
+
+- https://developers.openai.com/codex/learn/best-practices

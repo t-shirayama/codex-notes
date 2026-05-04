@@ -1,5 +1,10 @@
 # AGENTS.mdの運用方針
 
+> 種別: official
+> 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
+> 最終ファクトチェック: 2026-05-04
+> 確認メモ: AGENTS.md の役割とこのリポジトリ向けルール化を確認
+
 ## 概要
 
 `AGENTS.md` は、Codexに毎回守ってほしいルールを置くファイルです。プロンプトを短くしながら、一貫性を上げるために使います。
@@ -50,3 +55,10 @@
 もう一歩進めるなら、「公式URLの要約は `docs/official/`、Qiita / Zenn の再編集は `docs/curation/` に置く」のように、保存先まで明文化すると迷いが減ります。
 
 さらに運用を揃えるなら、記事を更新したときに本文の `最終ファクトチェック` と `docs/operations/article-registry.md` の両方を更新する、と書いておくと保守しやすくなります。
+
+## 参考元
+
+このページは以下の参考元に基づいて整理しています。未確認の推測は含めていません。
+
+- https://developers.openai.com/codex/learn/best-practices
+- https://help.openai.com/en/articles/11369540-codex-in-chatgpt

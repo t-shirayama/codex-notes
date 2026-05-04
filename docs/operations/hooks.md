@@ -1,8 +1,13 @@
 # hooksの運用方針
 
+> 種別: official
+> 参考元: [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt)
+> 最終ファクトチェック: 2026-05-04
+> 確認メモ: 自動化と安全確認の考え方をこのリポジトリ向けに整理
+
 ## 概要
 
-`hook` は、Codexの実行前後で入れたい定型チェックや補助処理をまとめる場所です。このリポジトリでは、まず安全チェックと通知系から始めます。
+`hook` は、このリポジトリでCodexの実行前後に入れたい定型チェックや補助処理をまとめる場所です。ここで書いている内容は公開情報をもとにした運用方針であり、未確認の推測ではありません。
 
 ## 向いている処理
 
@@ -31,3 +36,10 @@
 ## 具体例
 
 「ドキュメントを更新したらリンク確認を促す」程度の軽い補助は `hook` に向いています。
+
+## 参考元
+
+このページは以下の参考元に基づいて整理しています。未確認の推測は含めていません。
+
+- https://help.openai.com/en/articles/11369540-codex-in-chatgpt
+- https://platform.openai.com/docs/codex/overview
