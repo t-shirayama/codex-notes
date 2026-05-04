@@ -24,6 +24,7 @@
 - [記事台帳](./operations/article-registry.md)
 - [skillsの運用方針](./operations/skills.md)
 - [skills作成ガイド](./operations/skill-authoring.md)
+- [MCPの運用方針](./operations/mcp.md)
 - [hooksの運用方針](./operations/hooks.md)
 
 ## Curation

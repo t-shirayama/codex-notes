@@ -23,6 +23,7 @@ Codexを日本語で学び、実務で使いこなすためのメモリポジト
 - [AGENTS.mdの運用方針](./docs/operations/agents-md.md)
 - [skillsの追加基準](./docs/operations/skills.md)
 - [skills作成ガイド](./docs/operations/skill-authoring.md)
+- [MCPの運用方針](./docs/operations/mcp.md)
 - [hooksの追加基準](./docs/operations/hooks.md)
 - [記事台帳](./docs/operations/article-registry.md)
 - [公式要約テンプレート](./docs/templates/official-summary.md)
