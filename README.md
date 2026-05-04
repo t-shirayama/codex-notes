@@ -29,6 +29,36 @@ Codexを日本語で学び、実務で使いこなすためのメモリポジト
 
 - [ドキュメント一覧](./docs/SUMMARY.md)
 
+## skillsの使い方
+
+このリポジトリでは、共有skillを `.agents/skills/` に置いています。
+使いたいときは、skill名を明示して依頼すると発火しやすくなります。
+
+### URL要約skillの例
+
+`url-to-markdown-summary` を使うと、URLからそのまま保存しやすいMarkdown記事を作れます。
+
+```txt
+Use $url-to-markdown-summary to turn this OpenAI documentation URL into a save-ready Japanese Markdown article.
+保存先は docs/official を想定。
+```
+
+```txt
+Use $url-to-markdown-summary to summarize these Qiita and Zenn URLs into a Japanese Markdown article.
+記事ごとの感想ではなく、docs/curation 向けにテーマ単位で再構成して。
+```
+
+### 自然文でも依頼できる例
+
+```txt
+このOpenAI公式URLを日本語で分かりやすくMarkdown記事にして。
+保存先は docs/official を想定。
+```
+
+```txt
+このQiitaとZennの記事を元に、AGENTS.md運用の実践知見を docs/curation 向けのMarkdownにまとめて。
+```
+
 ## 具体例
 
 例えば「Codexに毎回同じ説明をしている」と感じたら、`docs/operations/agents-md.md` と `docs/templates/AGENTS.md` を見れば、どこまで恒久ルールを外出しすべきか判断しやすくなります。
