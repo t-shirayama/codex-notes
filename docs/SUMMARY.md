@@ -41,6 +41,10 @@
 - [外部知見テンプレート](./templates/curation-summary.md)
 - [hook.ps1テンプレート](./templates/hook.ps1)
 
+## Repository Skills
+
+- [URL To Markdown Summary](../.agents/skills/url-to-markdown-summary/SKILL.md)
+
 ## Alternatives
 
 - [Gemini API × Aider（代替案）](./alternatives/gemini-api-aider.md)
