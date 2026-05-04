@@ -13,6 +13,7 @@
 ## Workflows
 
 - [AI駆動開発ワークフロー](./workflows/ai-driven-development.md)
+- [Webアプリ開発スターター](./workflows/web-app-codex-starter.md)
 
 ## Best Practices
 
@@ -58,6 +59,7 @@
 ## Examples
 
 - [Feature Request Board](../examples/feature-request-board/README.md)
+- [Web App Starter](../examples/web-app-starter/README.md)
 
 ## Repository Metadata
 

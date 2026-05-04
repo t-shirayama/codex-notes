@@ -16,7 +16,7 @@ Codexを日本語で学び、実務で使いこなすためのメモリポジト
 2. 自分のプロジェクトに合う [AGENTS.mdテンプレート](./docs/templates/AGENTS.md) をコピーして調整する
 3. 繰り返す作業があれば [URL To Markdown Summary](./.agents/skills/url-to-markdown-summary/SKILL.md) や [SKILL.mdテンプレート](./docs/templates/SKILL.md) を参考に skill 化する
 4. 公式情報を見直したら [記事台帳](./docs/operations/article-registry.md) の日付とメモを更新する
-5. 実例を見たいときは [Feature Request Board](./examples/feature-request-board/README.md) を確認する
+5. Webアプリをゼロから始めるときは [Webアプリ開発スターター](./docs/workflows/web-app-codex-starter.md) と [Web App Starter](./examples/web-app-starter/README.md) を確認する
 
 ## 読み進め方
 
@@ -28,6 +28,7 @@ Codexを日本語で学び、実務で使いこなすためのメモリポジト
 ### 運用を整える
 
 - [公式ベストプラクティス要約](./docs/official/best-practices.md)
+- [Webアプリ開発スターター](./docs/workflows/web-app-codex-starter.md)
 - [AGENTS.mdの運用方針](./docs/operations/agents-md.md)
 - [skillsの追加基準](./docs/operations/skills.md)
 - [skills作成ガイド](./docs/operations/skill-authoring.md)
@@ -89,6 +90,8 @@ Use $url-to-markdown-summary to re-check this official article against its sourc
 例えば「Codexに毎回同じ説明をしている」と感じたら、`docs/operations/agents-md.md` と `docs/templates/AGENTS.md` を見れば、どこまで恒久ルールを外出しすべきか判断しやすくなります。
 
 URLを渡して最初から保存用Markdown記事を作りたいときは、`.agents/skills/url-to-markdown-summary/` のskill設計と `docs/templates/official-summary.md` / `docs/templates/curation-summary.md` を見ると運用しやすいです。
+
+Webアプリを初めからCodexで開発するなら、`examples/web-app-starter/` をコピーして、要件、設計、環境変数、テスト、レビュー観点を先に埋めると始めやすくなります。
 
 記事を増やしてきたら、`docs/operations/article-registry.md` に参考元と最終ファクトチェック日を残しておくと、どこを再確認すべきか追いやすくなります。
 
