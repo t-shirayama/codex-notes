@@ -1,0 +1,15 @@
+{
+  "task": "story-001-login",
+  "status": "draft",
+  "goal": "Feature Request Board にログイン導線を追加する",
+  "references": [
+    "docs/specs/story-001-login/requirement.md",
+    "docs/specs/story-001-login/plan.md",
+    "docs/guidelines/review.md"
+  ],
+  "changed_files": [],
+  "notes": [
+    "この例は実装コードではなく、Codex運用資産の置き方を示す",
+    "要件、計画、レビュー観点を分ける"
+  ]
+}

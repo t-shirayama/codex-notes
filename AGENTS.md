@@ -64,6 +64,14 @@ AIは「読みやすさ」「再利用しやすさ」「情報源の明確さ」
 - 大きなリネームや構造変更は、必要性が明確な場合だけ行う
 - 目次を変えたら `docs/SUMMARY.md` か `README.md` を同時に更新する
 
+## Review Checklist
+
+- README / SUMMARY / article-registry のリンク整合性を確認したか
+- 参考元がある記事は本文と記事台帳のファクトチェック日が一致しているか
+- 新規記事は1ファイル1トピックになっているか
+- 公式情報と外部記事の意見を混ぜていないか
+- 完了済みの `PLAN.md` は `docs/archive/plans/` に移したか
+
 ## Summary Rules
 
 - 公式要約には参考元を入れる
@@ -97,6 +105,7 @@ AIは「読みやすさ」「再利用しやすさ」「情報源の明確さ」
 - `docs/templates/PLANS.md`
 - `docs/templates/context.json`
 - `docs/templates/SKILL.md`
+- `docs/templates/hook.py`
 - `docs/templates/hook.ps1`
 
 ## Out Of Scope

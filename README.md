@@ -10,6 +10,14 @@ Codexを日本語で学び、実務で使いこなすためのメモリポジト
 - `AGENTS.md`、`skills`、`hooks` の設計メモ
 - Qiita / Zenn など外部知見の再編集ノート
 
+## 使い方
+
+1. [VS Codeで始めるCodex](./docs/getting-started/vscode-codex.md) から読む
+2. 自分のプロジェクトに合う [AGENTS.mdテンプレート](./docs/templates/AGENTS.md) をコピーして調整する
+3. 繰り返す作業があれば [URL To Markdown Summary](./.agents/skills/url-to-markdown-summary/SKILL.md) や [SKILL.mdテンプレート](./docs/templates/SKILL.md) を参考に skill 化する
+4. 公式情報を見直したら [記事台帳](./docs/operations/article-registry.md) の日付とメモを更新する
+5. 実例を見たいときは [Feature Request Board](./examples/feature-request-board/README.md) を確認する
+
 ## 読み進め方
 
 ### まず読む
@@ -85,3 +93,25 @@ URLを渡して最初から保存用Markdown記事を作りたいときは、`.a
 記事を増やしてきたら、`docs/operations/article-registry.md` に参考元と最終ファクトチェック日を残しておくと、どこを再確認すべきか追いやすくなります。
 
 作業中の計画だけをルートの `PLAN.md` に置き、完了済みの計画は `docs/archive/plans/` に移します。
+
+## 設定ファイル
+
+- `.codex/`: Codex向けのリポジトリ設定とhook補助スクリプトの置き場
+- `.vscode/`: VS CodeでMarkdownを読みやすくするための補助設定
+- `.agents/skills/`: 再利用可能なCodex skillの置き場
+
+## GitHubメタデータ
+
+GitHubのAboutには、次の内容を設定すると初見の人に伝わりやすくなります。
+
+```txt
+Description:
+Japanese Codex operations knowledge base: AGENTS.md, skills, hooks, workflows, and curated docs.
+
+Topics:
+codex, openai, agents-md, ai-coding, developer-tools, japanese, documentation, workflow
+```
+
+## License
+
+このリポジトリは [MIT License](./LICENSE) で公開しています。
