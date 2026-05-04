@@ -1,5 +1,7 @@
 # PLANS.md
 
+> 作業中の計画だけをルートの `PLAN.md` に置く。完了後は `docs/archive/plans/YYYY-MM-DD-topic.md` に移動する。
+
 ## Goal
 
 何を達成する計画かを書く。

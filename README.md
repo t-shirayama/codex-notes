@@ -83,3 +83,5 @@ Use $url-to-markdown-summary to re-check this official article against its sourc
 URLを渡して最初から保存用Markdown記事を作りたいときは、`.agents/skills/url-to-markdown-summary/` のskill設計と `docs/templates/official-summary.md` / `docs/templates/curation-summary.md` を見ると運用しやすいです。
 
 記事を増やしてきたら、`docs/operations/article-registry.md` に参考元と最終ファクトチェック日を残しておくと、どこを再確認すべきか追いやすくなります。
+
+作業中の計画だけをルートの `PLAN.md` に置き、完了済みの計画は `docs/archive/plans/` に移します。

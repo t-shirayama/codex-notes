@@ -27,6 +27,10 @@
 - [MCPの運用方針](./operations/mcp.md)
 - [hooksの運用方針](./operations/hooks.md)
 
+## Archive
+
+- [2026-05-04 codex-memoレビュー対応PLAN](./archive/plans/2026-05-04-codex-memo-review-plan.md)
+
 ## Curation
 
 - [AGENTS.md設計パターン集](./curation/agents-md-patterns.md)
