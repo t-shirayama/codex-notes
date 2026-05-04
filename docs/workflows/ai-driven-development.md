@@ -61,4 +61,4 @@ feature-request-board/
 
 このページは以下の参考元に基づいて整理しています。未確認の推測は含めていません。
 
-- https://developers.cyberagent.co.jp/blog/archives/62010/
+- [CyberAgent Developers Blog](https://developers.cyberagent.co.jp/blog/archives/62010/)

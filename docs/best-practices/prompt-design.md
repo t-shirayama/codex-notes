@@ -66,6 +66,6 @@ Codexに強い出力をしてもらうには、長い説明より「何を」「
 
 このページは以下の参考元に基づいて整理しています。未確認の推測は含めていません。
 
-- https://developers.openai.com/codex/learn/best-practices
-- https://platform.openai.com/docs/guides/prompt-engineering/strategies-to-improve-reliability
-- https://platform.openai.com/docs/guides/prompting
+- [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
+- [OpenAI Prompt engineering guide](https://platform.openai.com/docs/guides/prompt-engineering/strategies-to-improve-reliability)
+- [OpenAI Prompting guide](https://platform.openai.com/docs/guides/prompting)

@@ -61,8 +61,8 @@ VS Code の拡張機能マーケットプレイスで `Codex` を検索し、Ope
 
 このページは以下の参考元に基づいて整理しています。未確認の推測は含めていません。
 
-- https://help.openai.com/en/articles/11369540-codex-in-chatgpt
-- https://openai.com/codex
+- [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt)
+- [OpenAI Codex overview](https://openai.com/codex)
 
 ## 関連記事
 

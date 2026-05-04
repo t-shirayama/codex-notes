@@ -108,4 +108,4 @@ Codexは「その場しのぎの補助ツール」ではなく、ルールと手
 
 このページは以下の参考元に基づいて整理しています。未確認の推測は含めていません。
 
-- https://developers.openai.com/codex/learn/best-practices
+- [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)

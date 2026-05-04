@@ -17,10 +17,10 @@
 
 | 記事タイトル | パス | 種別 | 参考元 | 最終ファクトチェック日 | ステータス | メモ |
 | --- | --- | --- | --- | --- | --- | --- |
-| 公式ベストプラクティス要約 | `docs/official/best-practices.md` | `official` | `https://developers.openai.com/codex/learn/best-practices` | `2026-05-04` | `checked` | 参考元リンクと要約構成を確認 |
-| AGENTS / config / skills / hooks の役割 | `docs/official/agents-config-skills-hooks.md` | `official` | `https://developers.openai.com/codex/learn/best-practices`<br>`https://help.openai.com/en/articles/11369540-codex-in-chatgpt` | `2026-05-04` | `checked` | 参考元ベースの運用解説として整理 |
-| AGENTS.md設計パターン集 | `docs/curation/agents-md-patterns.md` | `curation` | `https://zenn.dev/redamoon/articles/article27-agents`<br>`https://zenn.dev/unikoukokun/articles/333be4765ec62a` | `2026-05-04` | `checked` | 参考元を追加し、要点と記述パターンを照合 |
-| 複数エージェント運用メモ | `docs/curation/multi-agent-workflows.md` | `curation` | `https://zenn.dev/zenchaine/articles/codex-multi-agent-vs-claude-code`<br>`https://qiita.com/syonon/items/b75a50bf81cb723fda1c` | `2026-05-04` | `checked` | 参考元を追加し、並列分担の要点を確認 |
+| 公式ベストプラクティス要約 | `docs/official/best-practices.md` | `official` | [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices) | `2026-05-04` | `checked` | 参考元リンクと要約構成を確認 |
+| AGENTS / config / skills / hooks の役割 | `docs/official/agents-config-skills-hooks.md` | `official` | [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)<br>[Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt) | `2026-05-04` | `checked` | 参考元ベースの運用解説として整理 |
+| AGENTS.md設計パターン集 | `docs/curation/agents-md-patterns.md` | `curation` | [What is AGENTS.md?](https://zenn.dev/redamoon/articles/article27-agents)<br>[CodexのAGENTS.md超徹底解説](https://zenn.dev/unikoukokun/articles/333be4765ec62a) | `2026-05-04` | `checked` | 参考元を追加し、要点と記述パターンを照合 |
+| 複数エージェント運用メモ | `docs/curation/multi-agent-workflows.md` | `curation` | [Codex のマルチエージェント機能を Claude Code と徹底比較する](https://zenn.dev/zenchaine/articles/codex-multi-agent-vs-claude-code)<br>[Codex CLIでもマルチエージェント(subagent)機能が利用可能になった](https://qiita.com/syonon/items/b75a50bf81cb723fda1c) | `2026-05-04` | `checked` | 参考元を追加し、並列分担の要点を確認 |
 
 ## 更新ルール
 
@@ -31,4 +31,4 @@
 
 ## 参考元
 
-- https://developers.openai.com/codex/learn/best-practices
+- [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)

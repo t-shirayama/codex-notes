@@ -41,5 +41,5 @@
 
 このページは以下の参考元に基づいて整理しています。未確認の推測は含めていません。
 
-- https://help.openai.com/en/articles/11369540-codex-in-chatgpt
-- https://platform.openai.com/docs/codex/overview
+- [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt)
+- [Codex cloud overview](https://platform.openai.com/docs/codex/overview)

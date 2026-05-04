@@ -16,6 +16,7 @@
 - 触ってよい範囲と禁止事項
 - 目次更新やドキュメント運用のルール
 - 公式情報と外部知見をどう分けて扱うか
+- 裸URLを書かず、参考元をMarkdownリンクで残すルール
 
 ## 何を書かないか
 
@@ -60,5 +61,5 @@
 
 このページは以下の参考元に基づいて整理しています。未確認の推測は含めていません。
 
-- https://developers.openai.com/codex/learn/best-practices
-- https://help.openai.com/en/articles/11369540-codex-in-chatgpt
+- [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
+- [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt)
