@@ -1,9 +1,9 @@
 # AGENTS.mdの運用方針
 
 > 種別: official
-> 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
+> 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md)
 > 最終ファクトチェック: 2026-05-04
-> 確認メモ: AGENTS.md の役割とこのリポジトリ向けルール化を確認
+> 確認メモ: AGENTS.md の役割、AGENTS.override.md、階層ごとの読み込み順を確認
 
 ## 概要
 
@@ -29,6 +29,25 @@
 - 同じ指示を2回以上書いた
 - 同じ失敗を2回以上繰り返した
 - レビューで毎回同じ指摘が出る
+
+## 読み込み順と上書き
+
+Codexは、グローバル設定から現在の作業ディレクトリに近い階層へ向かって、指示ファイルを順番に読み込みます。後から読み込まれる近い階層の指示ほど優先されるため、プロジェクト全体のルールはリポジトリルートに置き、特定領域だけのルールは対象ディレクトリの近くに置きます。
+
+公式仕様では、各階層で `AGENTS.override.md` があれば `AGENTS.md` より優先されます。`AGENTS.override.md` は一時的な上書きや、特定チーム・特定サブディレクトリだけの例外を明確にしたいときに使います。
+
+### 具体例
+
+```txt
+AGENTS.md
+services/
+  payments/
+    AGENTS.override.md
+```
+
+この状態で `services/payments/` からCodexを起動すると、リポジトリルートの `AGENTS.md` を読んだあと、より近い `services/payments/AGENTS.override.md` の指示が後から入ります。payments配下だけテストコマンドやレビュー観点を変えたい場合に向いています。
+
+既存の別名ファイルを指示ファイルとして扱いたい場合は、`project_doc_fallback_filenames` を設定できます。指示全体が大きくなる場合は、`project_doc_max_bytes` の上限も確認します。
 
 ## 最小構成
 
@@ -62,4 +81,5 @@
 このページは以下の参考元に基づいて整理しています。未確認の推測は含めていません。
 
 - [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
+- [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md)
 - [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt)

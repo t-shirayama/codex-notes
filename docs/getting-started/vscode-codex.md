@@ -1,9 +1,9 @@
 # VS Codeで始めるCodex
 
 > 種別: official
-> 参考元: [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt)
+> 参考元: [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt), [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)
 > 最終ファクトチェック: 2026-05-04
-> 確認メモ: VS Code利用開始に必要な公開情報を確認
+> 確認メモ: VS Code利用開始、Reasoning Effort、approval policy と sandbox mode の関係を確認
 
 VS CodeでCodexを初めて使う人向けの導入メモです。
 
@@ -39,19 +39,23 @@ VS Code の拡張機能マーケットプレイスで `Codex` を検索し、Ope
 | --- | --- | --- |
 | **Chat** | 会話・相談のみ。ファイル操作なし | 設計の相談、コードレビューの依頼 |
 | **Agent** | ファイルの読み書き・コマンド実行が可能。実行前に確認あり | 通常の開発作業 |
-| **Agent (Full Access)** | 確認なしで自律的に実行 | 実験的な作業や限定された検証 |
+| **Agent (Full Access)** | 設定次第で確認を減らし、広い操作を許可できる | 信頼できるリポジトリでの限定された検証 |
+
+`Agent (Full Access)` は「常に確認なしで何でも実行する」という意味ではありません。実際の確認有無やアクセス範囲は、`approval policy` と `sandbox mode` の組み合わせに依存します。最初は既定の権限から始め、信頼できるリポジトリや必要性が明確な作業だけ段階的に広げます。
 
 ### Reasoning Effort の調整
 
 - **Low:** 範囲が明確な速いタスク
 - **Medium:** ほとんどのタスクで十分
 - **High:** 複雑な変更や大規模整理向け
+- **Extra High:** 長時間・自律的・推論負荷の高い作業向け
 
 ## 最初に意識するとよいこと
 
 - 対象ファイルを開いておく
 - タスクは小さく具体的にする
 - 複雑なら `/plan` を使う
+- 権限を広げる前に、対象リポジトリと実行コマンドを確認する
 
 ## 具体例
 
@@ -63,6 +67,8 @@ VS Code の拡張機能マーケットプレイスで `Codex` を検索し、Ope
 
 - [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt)
 - [OpenAI Codex overview](https://openai.com/codex)
+- [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
+- [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)
 
 ## 関連記事
 

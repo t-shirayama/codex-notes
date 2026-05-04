@@ -1,9 +1,9 @@
 # 公式ベストプラクティス要約
 
 > 種別: official
-> 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
+> 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Review - Codex app](https://developers.openai.com/codex/app/review)
 > 最終ファクトチェック: 2026-05-04
-> 確認メモ: 参考元リンクと本文の主要論点を確認
+> 確認メモ: 参考元リンク、本文の主要論点、レビュー導線を確認
 
 Codexは「その場しのぎの補助ツール」ではなく、ルールと手順を育てながら使うチームメンバーとして扱うと安定します。
 
@@ -71,6 +71,19 @@ Codexは「その場しのぎの補助ツール」ではなく、ルールと手
 
 コードを書かせるだけで終わらせず、検証まで含めて運用します。
 
+### `/review` と diff レビュー
+
+PR前、広範囲変更後、またはレビュー観点を固定したいときは、実装依頼とは別にレビュー依頼を出します。Codex app のレビュー画面では未コミット差分やブランチ差分を確認でき、`/review` を使うと未コミット変更、base branchとの差分、特定コミットなどをレビュー対象にできます。
+
+### 具体例
+
+```txt
+/review
+未コミット変更をレビューして。バグ、仕様 regressions、足りないテストを優先して指摘して。
+```
+
+実装とレビューを分けると、Codexに「作る視点」と「壊れていないか確認する視点」を切り替えさせやすくなります。チームでレビュー観点を揃えたい場合は、`code_review.md` のようなファイルを作り、`AGENTS.md` から参照します。
+
 ## 6. 外部コンテキストはMCPで取得する
 
 - リポジトリ外の情報が必要
@@ -109,3 +122,4 @@ Codexは「その場しのぎの補助ツール」ではなく、ルールと手
 このページは以下の参考元に基づいて整理しています。未確認の推測は含めていません。
 
 - [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
+- [Review - Codex app](https://developers.openai.com/codex/app/review)
