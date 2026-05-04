@@ -58,3 +58,8 @@
 ## Examples
 
 - [Feature Request Board](../examples/feature-request-board/README.md)
+
+## Repository Metadata
+
+- [README](../README.md)
+- [LICENSE](../LICENSE)

@@ -26,3 +26,14 @@ Codex向けドキュメントと運用資産をどう揃えるかの最小例で
 2. `docs/specs/story-001-login/requirement.md` で受け入れ条件を読む
 3. `docs/specs/story-001-login/plan.md` に沿って実装する
 4. `docs/guidelines/review.md` の観点で差分を確認する
+
+## context.json の扱い
+
+`changed_files` は作業前は空配列にしておきます。変更後は、実際に更新したファイルを追加します。
+
+```json
+"changed_files": [
+  "docs/specs/story-001-login/requirement.md",
+  "docs/specs/story-001-login/plan.md"
+]
+```

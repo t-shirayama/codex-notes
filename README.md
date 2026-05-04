@@ -100,9 +100,9 @@ URLを渡して最初から保存用Markdown記事を作りたいときは、`.a
 - `.vscode/`: VS CodeでMarkdownを読みやすくするための補助設定
 - `.agents/skills/`: 再利用可能なCodex skillの置き場
 
-## GitHubメタデータ
+## GitHubメタデータの推奨値
 
-GitHubのAboutには、次の内容を設定すると初見の人に伝わりやすくなります。
+このリポジトリを公開・再利用しやすくするため、GitHubのAboutには以下を設定します。
 
 ```txt
 Description:
