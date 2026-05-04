@@ -1,0 +1,14 @@
+{
+  "task": "docs-restructure",
+  "status": "draft",
+  "goal": "Codex運用メモをテーマ別に整理する",
+  "references": [
+    "docs/SUMMARY.md",
+    "AGENTS.md"
+  ],
+  "changed_files": [],
+  "notes": [
+    "公式要約と外部知見を分離する",
+    "具体例を各ページに入れる"
+  ]
+}
