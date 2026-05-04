@@ -122,7 +122,7 @@ skill名を明示した依頼だけでなく、自然文でも使いどころが
 
 1. 既存ファイルで同じ論点を説明していないか確認する
 2. `docs/templates/SKILL.md` をベースに書く
-3. `name` と `description` を具体的にする
+3. YAML front matter に `name` と `description` を書く
 4. `Purpose`、`Trigger`、`Inputs`、`Outputs`、`Steps`、`Example` を埋める
 5. 参考元がある作業なら、どこを見るか明記する
 6. 実例で1回以上試す

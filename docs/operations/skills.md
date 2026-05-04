@@ -43,8 +43,8 @@
 
 ## 最低限そろえる項目
 
-- `name`
-- `description`
+- YAML front matter の `name`
+- YAML front matter の `description`
 - `Purpose`
 - `Trigger`
 - `Inputs`
@@ -52,7 +52,7 @@
 - `Steps`
 - `Example`
 
-`description` と `Trigger` は特に重要です。ここが曖昧だと、自然文で依頼したときに skill を使うべき場面が伝わりにくくなります。
+`description` と `Trigger` は特に重要です。`description` は Codex が暗黙的に skill を選ぶ判断材料になるため、使う場面と使わない場面を短く具体的に書きます。
 
 ## 追加フロー
 

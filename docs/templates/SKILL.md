@@ -1,3 +1,8 @@
+---
+name: skill-name
+description: "このskillを使う場面、入力、出力、使わない場面を1文で書く。"
+---
+
 # Skill Name
 
 > - 参考元:
@@ -9,7 +14,9 @@
 
 ## Trigger
 
-- どんな依頼で使うか
+- 明示的に `$skill-name` と依頼されたとき
+- 自然文でどんな依頼が来たときに使うか
+- どんな依頼では使わないか
 
 ## Inputs
 
@@ -24,6 +31,11 @@
 1. 前提を確認する
 2. 必要な情報を集める
 3. 出力を整える
+
+## Resources
+
+- `references/example.md`: 判断基準や出力形式
+- `scripts/example.sh`: 必要な場合だけ使う補助スクリプト
 
 ## Notes
 
