@@ -7,9 +7,14 @@
     "docs/specs/story-001-login/plan.md",
     "docs/guidelines/review.md"
   ],
-  "changed_files": [],
+  "changed_files": [
+    "docs/specs/story-001-login/requirement.md",
+    "docs/specs/story-001-login/plan.md",
+    "docs/guidelines/review.md"
+  ],
   "notes": [
     "この例は実装コードではなく、Codex運用資産の置き方を示す",
+    "changed_files は作業後に更新したファイルを記録する",
     "要件、計画、レビュー観点を分ける"
   ]
 }

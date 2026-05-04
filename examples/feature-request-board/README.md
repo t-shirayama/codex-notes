@@ -29,11 +29,12 @@ Codex向けドキュメントと運用資産をどう揃えるかの最小例で
 
 ## context.json の扱い
 
-`changed_files` は作業前は空配列にしておきます。変更後は、実際に更新したファイルを追加します。
+`changed_files` は、テンプレートとして使い始める時点では空配列で構いません。変更後は、実際に更新したファイルを追加します。このサンプルでは、要件、計画、レビュー観点を更新済みの例として入れています。
 
 ```json
 "changed_files": [
   "docs/specs/story-001-login/requirement.md",
-  "docs/specs/story-001-login/plan.md"
+  "docs/specs/story-001-login/plan.md",
+  "docs/guidelines/review.md"
 ]
 ```
