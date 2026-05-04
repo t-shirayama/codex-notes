@@ -22,6 +22,7 @@ Codexを日本語で学び、実務で使いこなすためのメモリポジト
 - [AGENTS.mdの運用方針](./docs/operations/agents-md.md)
 - [skillsの追加基準](./docs/operations/skills.md)
 - [hooksの追加基準](./docs/operations/hooks.md)
+- [記事台帳](./docs/operations/article-registry.md)
 - [公式要約テンプレート](./docs/templates/official-summary.md)
 - [外部知見テンプレート](./docs/templates/curation-summary.md)
 
@@ -59,8 +60,22 @@ Use $url-to-markdown-summary to summarize these Qiita and Zenn URLs into a Japan
 このQiitaとZennの記事を元に、AGENTS.md運用の実践知見を docs/curation 向けのMarkdownにまとめて。
 ```
 
+### ファクトチェック用の例
+
+```txt
+Use $url-to-markdown-summary to re-check this official article against its source URL.
+差分があれば本文と最終ファクトチェック日を更新して、article-registry.md のメモも更新して。
+```
+
+```txt
+この curation 記事を原典URLで見直して、古くなった主張があれば修正案を出して。
+最終ファクトチェック日と確認メモも更新して。
+```
+
 ## 具体例
 
 例えば「Codexに毎回同じ説明をしている」と感じたら、`docs/operations/agents-md.md` と `docs/templates/AGENTS.md` を見れば、どこまで恒久ルールを外出しすべきか判断しやすくなります。
 
 URLを渡して最初から保存用Markdown記事を作りたいときは、`.agents/skills/url-to-markdown-summary/` のskill設計と `docs/templates/official-summary.md` / `docs/templates/curation-summary.md` を見ると運用しやすいです。
+
+記事を増やしてきたら、`docs/operations/article-registry.md` に原典URLと最終ファクトチェック日を残しておくと、どこを再確認すべきか追いやすくなります。

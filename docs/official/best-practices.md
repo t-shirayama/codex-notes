@@ -1,5 +1,10 @@
 # 公式ベストプラクティス要約
 
+> 種別: official
+> 原典: [best-practices](https://developers.openai.com/codex/learn/best-practices)
+> 最終ファクトチェック: 2026-05-04
+> 確認メモ: 原典リンクと本文の主要論点を確認
+
 > 出典: [best-practices](https://developers.openai.com/codex/learn/best-practices)
 
 Codexは「その場しのぎの補助ツール」ではなく、ルールと手順を育てながら使うチームメンバーとして扱うと安定します。

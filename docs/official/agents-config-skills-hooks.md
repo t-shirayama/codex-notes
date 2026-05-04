@@ -1,5 +1,10 @@
 # AGENTS / config / skills / hooks の役割
 
+> 種別: official
+> 原典: [best-practices](https://developers.openai.com/codex/learn/best-practices)
+> 最終ファクトチェック: 2026-05-04
+> 確認メモ: 原典をもとに運用要素の役割を再整理
+
 ## 概要
 
 Codexを継続的に使うときは、毎回のプロンプトだけで運用せず、ルールと手順をファイルに外出しすると安定します。

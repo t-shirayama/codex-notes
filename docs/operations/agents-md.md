@@ -48,3 +48,5 @@
 「目次を更新したら `docs/SUMMARY.md` も更新する」のようなルールは、口頭で毎回伝えるより `AGENTS.md` に固定した方がぶれません。
 
 もう一歩進めるなら、「公式URLの要約は `docs/official/`、Qiita / Zenn の再編集は `docs/curation/` に置く」のように、保存先まで明文化すると迷いが減ります。
+
+さらに運用を揃えるなら、記事を更新したときに本文の `最終ファクトチェック` と `docs/operations/article-registry.md` の両方を更新する、と書いておくと保守しやすくなります。
