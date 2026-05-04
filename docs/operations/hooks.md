@@ -59,7 +59,10 @@ codex_hooks = true
 
 - hook設定: `.codex/hooks.json` または `.codex/config.toml`
 - hookから呼ぶスクリプト: `.codex/hooks/`
-- テンプレート: `docs/templates/hook.ps1`
+- クロスプラットフォーム向けテンプレート: `docs/templates/hook.py`
+- PowerShell向けテンプレート: `docs/templates/hook.ps1`
+
+Windows と macOS の両方で使うhookは、チーム内で実行環境を揃えます。PowerShell版を使うなら macOS 側に PowerShell 7 (`pwsh`) が必要です。実行環境を増やしたくない場合は、Python版をベースにし、hook設定側で各OSのPython実行コマンドを確認します。
 
 ## 導入フロー
 
