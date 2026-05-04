@@ -23,6 +23,7 @@
 - [AGENTS.mdの運用方針](./operations/agents-md.md)
 - [記事台帳](./operations/article-registry.md)
 - [skillsの運用方針](./operations/skills.md)
+- [skills作成ガイド](./operations/skill-authoring.md)
 - [hooksの運用方針](./operations/hooks.md)
 
 ## Curation

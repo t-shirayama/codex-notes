@@ -21,6 +21,7 @@ Codexを日本語で学び、実務で使いこなすためのメモリポジト
 - [公式ベストプラクティス要約](./docs/official/best-practices.md)
 - [AGENTS.mdの運用方針](./docs/operations/agents-md.md)
 - [skillsの追加基準](./docs/operations/skills.md)
+- [skills作成ガイド](./docs/operations/skill-authoring.md)
 - [hooksの追加基準](./docs/operations/hooks.md)
 - [記事台帳](./docs/operations/article-registry.md)
 - [公式要約テンプレート](./docs/templates/official-summary.md)
@@ -34,6 +35,7 @@ Codexを日本語で学び、実務で使いこなすためのメモリポジト
 
 このリポジトリでは、共有skillを `.agents/skills/` に置いています。
 使いたいときは、skill名を明示して依頼すると発火しやすくなります。
+作る側の判断基準は [skillsの追加基準](./docs/operations/skills.md) と [skills作成ガイド](./docs/operations/skill-authoring.md) にまとめています。
 
 ### URL要約skillの例
 
