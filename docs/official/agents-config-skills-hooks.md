@@ -1,9 +1,9 @@
 # AGENTS / config / skills / hooks の役割
 
-> 種別: official
-> 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
-> 最終ファクトチェック: 2026-05-04
-> 確認メモ: 参考元をもとに運用要素の役割を再整理
+> - 種別: official
+> - 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
+> - 最終ファクトチェック: 2026-05-04
+> - 確認メモ: 参考元をもとに運用要素の役割を再整理
 
 ## 概要
 

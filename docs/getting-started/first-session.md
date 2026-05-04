@@ -1,9 +1,9 @@
 # 最初の1セッションの進め方
 
-> 種別: official
-> 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
-> 最終ファクトチェック: 2026-05-04
-> 確認メモ: 1タスク1スレッドと計画先行の考え方を確認
+> - 種別: official
+> - 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
+> - 最終ファクトチェック: 2026-05-04
+> - 確認メモ: 1タスク1スレッドと計画先行の考え方を確認
 
 ## 概要
 

@@ -1,9 +1,9 @@
 # skills作成ガイド
 
-> 種別: official
-> 参考元: [Agent Skills - Codex](https://developers.openai.com/codex/skills), [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt)
-> 最終ファクトチェック: 2026-05-04
-> 確認メモ: skillの作成基準、発火設計、保守チェックを追加
+> - 種別: official
+> - 参考元: [Agent Skills - Codex](https://developers.openai.com/codex/skills), [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt)
+> - 最終ファクトチェック: 2026-05-04
+> - 確認メモ: skillの作成基準、発火設計、保守チェックを追加
 
 ## 概要
 

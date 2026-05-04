@@ -1,9 +1,9 @@
 # VS Codeで始めるCodex
 
-> 種別: official
-> 参考元: [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt), [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)
-> 最終ファクトチェック: 2026-05-04
-> 確認メモ: VS Code利用開始、Reasoning Effort、approval policy と sandbox mode の関係を確認
+> - 種別: official
+> - 参考元: [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt), [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)
+> - 最終ファクトチェック: 2026-05-04
+> - 確認メモ: VS Code利用開始、Reasoning Effort、approval policy と sandbox mode の関係を確認
 
 VS CodeでCodexを初めて使う人向けの導入メモです。
 

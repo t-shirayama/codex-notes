@@ -1,9 +1,9 @@
 # プロンプト設計の基本
 
-> 種別: official
-> 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
-> 最終ファクトチェック: 2026-05-04
-> 確認メモ: プロンプト設計の基本要素と明確な指示の重要性を確認
+> - 種別: official
+> - 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
+> - 最終ファクトチェック: 2026-05-04
+> - 確認メモ: プロンプト設計の基本要素と明確な指示の重要性を確認
 
 ## 概要
 

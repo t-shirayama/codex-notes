@@ -1,9 +1,9 @@
 # 公式ベストプラクティス要約
 
-> 種別: official
-> 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Review - Codex app](https://developers.openai.com/codex/app/review)
-> 最終ファクトチェック: 2026-05-04
-> 確認メモ: 参考元リンク、本文の主要論点、レビュー導線を確認
+> - 種別: official
+> - 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Review - Codex app](https://developers.openai.com/codex/app/review)
+> - 最終ファクトチェック: 2026-05-04
+> - 確認メモ: 参考元リンク、本文の主要論点、レビュー導線を確認
 
 Codexは「その場しのぎの補助ツール」ではなく、ルールと手順を育てながら使うチームメンバーとして扱うと安定します。
 

@@ -1,9 +1,9 @@
 # skillsの運用方針
 
-> 種別: official
-> 参考元: [Agent Skills - Codex](https://developers.openai.com/codex/skills), [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt)
-> 最終ファクトチェック: 2026-05-04
-> 確認メモ: skillsの基本方針に加えて作成入口と運用導線を拡充
+> - 種別: official
+> - 参考元: [Agent Skills - Codex](https://developers.openai.com/codex/skills), [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt)
+> - 最終ファクトチェック: 2026-05-04
+> - 確認メモ: skillsの基本方針に加えて作成入口と運用導線を拡充
 
 ## 概要
 
