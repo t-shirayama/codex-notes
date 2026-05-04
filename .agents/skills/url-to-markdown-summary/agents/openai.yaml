@@ -1,0 +1,4 @@
+interface:
+  display_name: "URL Markdown Summary"
+  short_description: "Turn source URLs into save-ready Japanese Markdown summaries."
+  default_prompt: "Use $url-to-markdown-summary to turn these source URLs into a save-ready Japanese Markdown article."

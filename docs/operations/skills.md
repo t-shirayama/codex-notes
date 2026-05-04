@@ -27,6 +27,18 @@
 - PRレビュー観点の整理
 - リリースノートの下書き生成
 
+## このリポジトリで使える具体例
+
+- `.agents/skills/url-to-markdown-summary/`
+
+このskillは、公式URLやQiita / ZennのURLを受け取り、そのまま `docs/official/` や `docs/curation/` に保存しやすいMarkdown記事として出力するためのものです。
+
+### 使いどころ
+
+- OpenAI公式ドキュメントを日本語で整理したい
+- QiitaやZennの知見をテーマ単位で再編集したい
+- URLを渡したら最初から保存用の本文を出したい
+
 ## 具体例
 
 毎回「原典リンク、要点、実務での意味、短い例」を揃えて公式要約を書いているなら、その手順は `skill` 候補です。

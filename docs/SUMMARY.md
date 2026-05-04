@@ -35,6 +35,8 @@
 - [PLANS.mdテンプレート](./templates/PLANS.md)
 - [context.jsonテンプレート](./templates/context.json)
 - [SKILL.mdテンプレート](./templates/SKILL.md)
+- [公式要約テンプレート](./templates/official-summary.md)
+- [外部知見テンプレート](./templates/curation-summary.md)
 - [hook.ps1テンプレート](./templates/hook.ps1)
 
 ## Alternatives

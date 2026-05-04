@@ -11,3 +11,4 @@
 ## 具体例
 
 - 公式ドキュメントの日本語要約を作るskill
+- URLを保存用Markdown記事に変換する `url-to-markdown-summary` skill

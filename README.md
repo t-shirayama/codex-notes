@@ -22,6 +22,8 @@ Codexを日本語で学び、実務で使いこなすためのメモリポジト
 - [AGENTS.mdの運用方針](./docs/operations/agents-md.md)
 - [skillsの追加基準](./docs/operations/skills.md)
 - [hooksの追加基準](./docs/operations/hooks.md)
+- [公式要約テンプレート](./docs/templates/official-summary.md)
+- [外部知見テンプレート](./docs/templates/curation-summary.md)
 
 ### 全体を見る
 
@@ -30,3 +32,5 @@ Codexを日本語で学び、実務で使いこなすためのメモリポジト
 ## 具体例
 
 例えば「Codexに毎回同じ説明をしている」と感じたら、`docs/operations/agents-md.md` と `docs/templates/AGENTS.md` を見れば、どこまで恒久ルールを外出しすべきか判断しやすくなります。
+
+URLを渡して最初から保存用Markdown記事を作りたいときは、`.agents/skills/url-to-markdown-summary/` のskill設計と `docs/templates/official-summary.md` / `docs/templates/curation-summary.md` を見ると運用しやすいです。
