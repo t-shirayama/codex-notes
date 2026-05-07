@@ -25,7 +25,6 @@
 - [AGENTS.mdの運用方針](./operations/agents-md.md)
 - [記事台帳](./operations/article-registry.md)
 - [skillsの運用方針](./operations/skills.md)
-- [skills作成ガイド](./operations/skill-authoring.md)
 - [MCPの運用方針](./operations/mcp.md)
 - [hooksの運用方針](./operations/hooks.md)
 
@@ -56,11 +55,6 @@
 ## Alternatives
 
 - [Gemini API × Aider（代替案）](./alternatives/gemini-api-aider.md)
-
-## Examples
-
-- [Feature Request Board](../examples/feature-request-board/README.md)
-- [Web App Starter](../examples/web-app-starter/README.md)
 
 ## Repository Metadata
 

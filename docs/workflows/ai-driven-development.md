@@ -36,7 +36,7 @@ OpenAIのCodexに代表される「大規模なコードコンテキストを理
 ## フォルダ構成のサンプル
 
 ```txt
-feature-request-board/
+product-project/
 ├── docs/
 │   ├── specs/
 │   ├── stories/

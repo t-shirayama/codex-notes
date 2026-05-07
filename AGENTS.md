@@ -30,7 +30,6 @@ AIは「読みやすさ」「再利用しやすさ」「情報源の明確さ」
 - `docs/curation/`: Qiita / Zenn / ブログ知見の再編集メモ
 - `docs/templates/`: 再利用用テンプレート
 - `docs/alternatives/`: Codex以外の比較・代替案
-- `examples/`: 実例
 - `.codex/hooks/`: リポジトリ共有のhooks置き場
 - `.agents/skills/`: リポジトリ共有のskills置き場
 

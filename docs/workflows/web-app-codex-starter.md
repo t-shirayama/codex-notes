@@ -2,8 +2,8 @@
 
 > - 種別: operations
 > - 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt), [OpenAI Codex CLI - Getting Started](https://help.openai.com/en/articles/11096431-openai-codex-cli-getting-started)
-> - 最終ファクトチェック: 2026-05-04
-> - 確認メモ: 実装コードではなく、Codexで新規Webアプリ開発を始める前の運用資産セットとして整理
+> - 最終ファクトチェック: 2026-05-08
+> - 確認メモ: `examples/` 削除に合わせて、必要な構成例を本文に集約
 
 ## 概要
 
@@ -20,7 +20,7 @@ WebアプリをCodexで作り始める前に、要件、設計、環境変数、
 
 ## 最初に作るファイル
 
-最小構成は [Web App Starter example](../../examples/web-app-starter/README.md) をコピーして使います。
+最小構成は次の形です。実装コードを置く前に、Codexが参照する前提ファイルだけを先に作ります。
 
 ```txt
 web-app/
@@ -94,7 +94,7 @@ web-app/
 ## 具体例
 
 ```txt
-examples/web-app-starter をベースに、新規Webアプリの開発準備をしたい。
+新規Webアプリの開発準備をしたい。
 まず vision.md、story-001-auth の requirement / plan、architecture、test、review の整合性を確認して。
 実装コードはまだ書かず、足りない前提だけ洗い出して。
 ```
