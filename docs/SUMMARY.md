@@ -17,6 +17,7 @@
 
 ## Best Practices
 
+- [Codex開発ルールチェックリスト](./best-practices/development-rules.md)
 - [プロンプト設計の基本](./best-practices/prompt-design.md)
 
 ## Operations

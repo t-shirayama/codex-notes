@@ -28,6 +28,7 @@ Codexを日本語で学び、実務で使いこなすためのメモリポジト
 ### 運用を整える
 
 - [公式ベストプラクティス要約](./docs/official/best-practices.md)
+- [Codex開発ルールチェックリスト](./docs/best-practices/development-rules.md)
 - [Webアプリ開発スターター](./docs/workflows/web-app-codex-starter.md)
 - [AGENTS.mdの運用方針](./docs/operations/agents-md.md)
 - [skillsの追加基準](./docs/operations/skills.md)
