@@ -2,8 +2,8 @@
 
 > - 種別: official
 > - 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
-> - 最終ファクトチェック: 2026-05-04
-> - 確認メモ: 参考元をもとに運用要素の役割を再整理
+> - 最終ファクトチェック: 2026-05-08
+> - 確認メモ: ベストプラクティス、AGENTS.md、skills、hooks、MCPの公式ページと照合
 
 ## 概要
 

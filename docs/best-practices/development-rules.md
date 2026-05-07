@@ -2,8 +2,8 @@
 
 > - 種別: operations
 > - 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md), 1週間の利用メモ
-> - 最終ファクトチェック: 2026-05-07
-> - 確認メモ: AGENTS.md に固定しやすい開発ルールとして、公式のテスト・レビュー推奨と照合
+> - 最終ファクトチェック: 2026-05-08
+> - 確認メモ: AGENTS.md に固定しやすい開発ルールとして、公式のテスト・レビュー推奨と再照合
 
 ## 概要
 

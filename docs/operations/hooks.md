@@ -2,8 +2,8 @@
 
 > - 種別: official
 > - 参考元: [Hooks - Codex](https://developers.openai.com/codex/hooks)
-> - 最終ファクトチェック: 2026-05-04
-> - 確認メモ: hooks の探索場所、feature flag、リポジトリ内スクリプト置き場の扱いを確認
+> - 最終ファクトチェック: 2026-05-08
+> - 確認メモ: hooks の探索場所、feature flag、イベント、リポジトリ内スクリプト置き場の扱いを再確認
 
 ## 概要
 

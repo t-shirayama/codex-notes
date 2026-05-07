@@ -1,9 +1,9 @@
 # VS Codeで始めるCodex
 
 > - 種別: official
-> - 参考元: [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt), [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)
-> - 最終ファクトチェック: 2026-05-04
-> - 確認メモ: VS Code利用開始、Reasoning Effort、approval policy と sandbox mode の関係を確認
+> - 参考元: [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt), [Codex IDE extension](https://developers.openai.com/codex/ide), [Codex IDE extension features](https://developers.openai.com/codex/ide/features), [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)
+> - 最終ファクトチェック: 2026-05-08
+> - 確認メモ: IDE extension のセットアップ、Reasoning Effort、approval policy と sandbox mode の関係を再確認
 
 VS CodeでCodexを初めて使う人向けの導入メモです。
 
@@ -48,7 +48,8 @@ VS Code の拡張機能マーケットプレイスで `Codex` を検索し、Ope
 - **Low:** 範囲が明確な速いタスク
 - **Medium:** ほとんどのタスクで十分
 - **High:** 複雑な変更や大規模整理向け
-- **Extra High:** 長時間・自律的・推論負荷の高い作業向け
+
+Codexの一般的なベストプラクティスでは、長時間・自律的・推論負荷の高い作業に `Extra High` が言及されています。一方、VS Code向けのIDE extension機能ページでは、Reasoning Effort は `low`、`medium`、`high` と説明されています。実際の選択肢は利用中のクライアント、モデル、設定に合わせて確認します。
 
 ## 最初に意識するとよいこと
 
@@ -66,6 +67,8 @@ VS Code の拡張機能マーケットプレイスで `Codex` を検索し、Ope
 このページは以下の参考元に基づいて整理しています。未確認の推測は含めていません。
 
 - [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt)
+- [Codex IDE extension](https://developers.openai.com/codex/ide)
+- [Codex IDE extension features](https://developers.openai.com/codex/ide/features)
 - [OpenAI Codex overview](https://openai.com/codex)
 - [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
 - [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)

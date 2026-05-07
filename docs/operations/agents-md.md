@@ -2,8 +2,8 @@
 
 > - 種別: official
 > - 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md)
-> - 最終ファクトチェック: 2026-05-04
-> - 確認メモ: AGENTS.md の役割、AGENTS.override.md、階層ごとの読み込み順を確認
+> - 最終ファクトチェック: 2026-05-08
+> - 確認メモ: AGENTS.md の役割、AGENTS.override.md、階層ごとの読み込み順を再確認
 
 ## 概要
 

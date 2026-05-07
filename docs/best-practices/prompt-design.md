@@ -1,9 +1,9 @@
 # プロンプト設計の基本
 
 > - 種別: official
-> - 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
-> - 最終ファクトチェック: 2026-05-04
-> - 確認メモ: プロンプト設計の基本要素と明確な指示の重要性を確認
+> - 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [OpenAI Prompting guide](https://developers.openai.com/api/docs/guides/prompting), [OpenAI Prompt engineering guide](https://developers.openai.com/api/docs/guides/prompt-engineering)
+> - 最終ファクトチェック: 2026-05-08
+> - 確認メモ: プロンプト設計の基本要素、計画先行、明確な指示の重要性を再確認
 
 ## 概要
 
@@ -67,5 +67,5 @@ Codexに強い出力をしてもらうには、長い説明より「何を」「
 このページは以下の参考元に基づいて整理しています。未確認の推測は含めていません。
 
 - [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
-- [OpenAI Prompt engineering guide](https://platform.openai.com/docs/guides/prompt-engineering/strategies-to-improve-reliability)
-- [OpenAI Prompting guide](https://platform.openai.com/docs/guides/prompting)
+- [OpenAI Prompt engineering guide](https://developers.openai.com/api/docs/guides/prompt-engineering)
+- [OpenAI Prompting guide](https://developers.openai.com/api/docs/guides/prompting)

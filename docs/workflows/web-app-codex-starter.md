@@ -1,7 +1,7 @@
 # Webアプリ開発スターター
 
 > - 種別: operations
-> - 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt), [OpenAI Codex CLI - Getting Started](https://help.openai.com/en/articles/11096431-openai-codex-cli-getting-started)
+> - 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt), [Codex CLI](https://developers.openai.com/codex/cli)
 > - 最終ファクトチェック: 2026-05-08
 > - 確認メモ: `examples/` 削除に合わせて、必要な構成例を本文に集約
 
@@ -108,4 +108,4 @@ web-app/
 - [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
 - [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md)
 - [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt)
-- [OpenAI Codex CLI - Getting Started](https://help.openai.com/en/articles/11096431-openai-codex-cli-getting-started)
+- [Codex CLI](https://developers.openai.com/codex/cli)

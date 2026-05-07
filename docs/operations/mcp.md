@@ -2,8 +2,8 @@
 
 > - 種別: official
 > - 参考元: [Model Context Protocol - Codex](https://developers.openai.com/codex/mcp), [Docs MCP](https://developers.openai.com/learn/docs-mcp)
-> - 最終ファクトチェック: 2026-05-04
-> - 確認メモ: OpenAI Docs MCP のURL、追加コマンド、設定ファイルの置き場所を確認
+> - 最終ファクトチェック: 2026-05-08
+> - 確認メモ: OpenAI Docs MCP のURL、追加コマンド、設定ファイルの置き場所を再確認
 
 ## 概要
 
