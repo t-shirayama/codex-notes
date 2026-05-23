@@ -27,9 +27,7 @@ Codexを日本語で学び、実務で使いこなすためのメモリポジト
 
 ### 運用を整える
 
-- [公式ベストプラクティス要約](./docs/official/best-practices.md)
 - [Codex運用の重要ポイント](./docs/curation/codex運用の重要ポイント.md)
-- [Webアプリ開発スターター](./docs/workflows/web-app-codex-starter.md)
 - [AGENTS.mdの運用方針](./docs/operations/agents-md.md)
 - [skillsの追加基準](./docs/operations/skills.md)
 - [skills作成ガイド](./docs/operations/skill-authoring.md)
@@ -38,6 +36,10 @@ Codexを日本語で学び、実務で使いこなすためのメモリポジト
 - [記事台帳](./docs/operations/article-registry.md)
 - [公式要約テンプレート](./docs/templates/official-summary.md)
 - [外部知見テンプレート](./docs/templates/curation-summary.md)
+
+### 実践する
+
+- [Webアプリ開発スターター](./docs/workflows/web-app-codex-starter.md)
 
 ### 全体を見る
 

@@ -2,8 +2,8 @@
 
 > - 種別: official
 > - 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md)
-> - 最終ファクトチェック: 2026-05-04
-> - 確認メモ: AGENTS.md の役割、AGENTS.override.md、階層ごとの読み込み順を確認
+> - 最終ファクトチェック: 2026-05-23
+> - 確認メモ: AGENTS.md / AGENTS.override.md の探索順、fallback名、project_doc上限を確認
 
 ## 概要
 
@@ -72,7 +72,7 @@ services/
 
 「目次を更新したら `docs/SUMMARY.md` も更新する」のようなルールは、口頭で毎回伝えるより `AGENTS.md` に固定した方がぶれません。
 
-もう一歩進めるなら、「公式URLの要約は `docs/official/`、Qiita / Zenn の再編集は `docs/curation/` に置く」のように、保存先まで明文化すると迷いが減ります。
+もう一歩進めるなら、「公式URLだけを扱う要約は公式要約テンプレートに沿う」「Qiita / Zenn の再編集は `docs/curation/` に置く」のように、保存先とテンプレートまで明文化すると迷いが減ります。
 
 さらに運用を揃えるなら、記事を更新したときに本文の `最終ファクトチェック` と `docs/operations/article-registry.md` の両方を更新する、と書いておくと保守しやすくなります。
 

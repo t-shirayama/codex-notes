@@ -2,12 +2,12 @@
 
 > - 種別: official
 > - 参考元: [Agent Skills - Codex](https://developers.openai.com/codex/skills), [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt)
-> - 最終ファクトチェック: 2026-05-04
-> - 確認メモ: skillの作成基準、発火設計、保守チェックを追加
+> - 最終ファクトチェック: 2026-05-23
+> - 確認メモ: skillの作成基準、発火設計、探索場所、pluginとの役割分担を確認
 
 ## 概要
 
-このページは、Codexで使う `skill` を実務レベルで設計するためのガイドです。OpenAIの公式情報では、skill は再利用できるワークフローとして扱われています。このリポジトリでは、その考え方を日本語ナレッジベース向けに具体化します。
+このページは、Codexで使う `skill` を実務レベルで設計するためのガイドです。公式情報では、skill は再利用ワークフローの authoring format、plugin はインストール可能な配布単位として扱われています。このリポジトリでは、その考え方を日本語ナレッジベース向けに具体化します。
 
 ## まず押さえる役割分担
 
@@ -16,7 +16,7 @@
 - `AGENTS.md`: 毎回守ってほしい恒久ルール
 - `skill`: 会話から呼び出したい再利用手順
 - `hook`: 実行前後の定型チェックや補助処理
-- `plugin`: 複数skillや連携設定をまとめて配布する単位
+- `plugin`: 複数skill、アプリ連携、MCP設定などをまとめて配布する単位
 
 ## 追加すべきskillの条件
 
@@ -126,9 +126,14 @@ skill名を明示した依頼だけでなく、自然文でも使いどころが
 4. `Purpose`、`Trigger`、`Inputs`、`Outputs`、`Steps`、`Example` を埋める
 5. 参考元がある作業なら、どこを見るか明記する
 6. 実例で1回以上試す
-7. `.agents/skills/README.md` を更新する
-8. `docs/operations/skills.md` に導線を足す
-9. 目次を変えたら `docs/SUMMARY.md` と必要なら `README.md` も更新する
+7. `docs/operations/skills.md` に導線を足す
+8. 目次を変えたら `docs/SUMMARY.md` と必要なら `README.md` も更新する
+
+## 探索場所と共有範囲
+
+Codexは、リポジトリ、ユーザー、管理者、システムの各スコープからskillを読み込みます。リポジトリでは、Codexを起動した作業ディレクトリからリポジトリルートまでの `.agents/skills` が対象です。個人用skillは `$HOME/.agents/skills`、管理者用skillは `/etc/codex/skills` に置けます。
+
+同じ `name` のskillが複数ある場合、Codexは自動マージしません。用途が重なるskillを増やすと選択がぶれやすいため、descriptionで範囲を明確にするか、不要なskillを無効化します。広く配布したい場合や複数skillをまとめたい場合は、plugin化を検討します。
 
 ## 具体例
 

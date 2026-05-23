@@ -5,19 +5,9 @@
 - [VS Codeで始めるCodex](./getting-started/vscode-codex.md)
 - [最初の1セッションの進め方](./getting-started/first-session.md)
 
-## Official
+## Core
 
-- [公式ベストプラクティス要約](./official/best-practices.md)
-- [AGENTS / config / skills / hooks の役割](./official/agents-config-skills-hooks.md)
-
-## Workflows
-
-- [AI駆動開発ワークフロー](./workflows/ai-driven-development.md)
-- [Webアプリ開発スターター](./workflows/web-app-codex-starter.md)
-
-## Best Practices
-
-- [プロンプト設計の基本](./best-practices/prompt-design.md)
+- [Codex運用の重要ポイント](./curation/codex運用の重要ポイント.md)
 
 ## Operations
 
@@ -28,10 +18,13 @@
 - [MCPの運用方針](./operations/mcp.md)
 - [hooksの運用方針](./operations/hooks.md)
 
+## Workflows
+
+- [Webアプリ開発スターター](./workflows/web-app-codex-starter.md)
+
 ## Curation
 
 - [AGENTS.md設計パターン集](./curation/agents-md-patterns.md)
-- [Codex運用の重要ポイント](./curation/codex運用の重要ポイント.md)
 - [複数エージェント運用メモ](./curation/multi-agent-workflows.md)
 
 ## Templates

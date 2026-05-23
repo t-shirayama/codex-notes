@@ -2,12 +2,12 @@
 
 > - 種別: official
 > - 参考元: [Model Context Protocol - Codex](https://developers.openai.com/codex/mcp), [Docs MCP](https://developers.openai.com/learn/docs-mcp)
-> - 最終ファクトチェック: 2026-05-04
-> - 確認メモ: OpenAI Docs MCP のURL、追加コマンド、設定ファイルの置き場所を確認
+> - 最終ファクトチェック: 2026-05-23
+> - 確認メモ: CLI/IDE拡張での共有設定、STDIO / Streamable HTTP、OAuth対応、プロジェクトスコープ設定を確認
 
 ## 概要
 
-MCPは、Codexに外部ツールや外部コンテキストを渡すための仕組みです。公式ドキュメントでは、Codex CLIとIDE拡張の両方でMCPサーバーを使えると説明されています。
+MCPは、Codexに外部ツールや外部コンテキストを渡すための仕組みです。公式ドキュメントでは、Codex CLIとIDE拡張の両方でMCPサーバーを使えると説明されています。Codexは、ローカルプロセスとして起動するSTDIOサーバーと、URLで接続するStreamable HTTPサーバーを扱えます。
 
 このリポジトリでは、OpenAIやCodexの公式情報を参照するときは OpenAI Docs MCP を優先します。最新情報を毎回Web検索や手動コピーに頼るより、公式ドキュメントを直接検索できる状態にしておく方が、記事のファクトチェックや更新作業が安定します。
 
@@ -38,7 +38,7 @@ codex mcp list
 url = "https://developers.openai.com/mcp"
 ```
 
-公式ドキュメントでは、MCP設定は既定で `~/.codex/config.toml` に保存され、信頼済みプロジェクトでは `.codex/config.toml` にプロジェクト単位で置くこともできると説明されています。
+公式ドキュメントでは、MCP設定は既定で `~/.codex/config.toml` に保存され、信頼済みプロジェクトでは `.codex/config.toml` にプロジェクト単位で置くこともできると説明されています。CLIとIDE拡張は同じ設定を共有します。
 
 ## このリポジトリでの判断基準
 

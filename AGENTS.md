@@ -23,11 +23,9 @@ AIは「読みやすさ」「再利用しやすさ」「情報源の明確さ」
 ## Directory Roles
 
 - `docs/getting-started/`: 初学者向けの導入
-- `docs/official/`: 公式ドキュメントの日本語要約
 - `docs/workflows/`: 実践フローと進め方
-- `docs/best-practices/`: 実務で使いやすい運用原則
 - `docs/operations/`: `AGENTS.md`、`skills`、`hooks` などの運用資産
-- `docs/curation/`: Qiita / Zenn / ブログ知見の再編集メモ
+- `docs/curation/`: 公式情報と外部知見をテーマ単位で再編集したメモ
 - `docs/templates/`: 再利用用テンプレート
 - `examples/`: 実例
 - `.codex/hooks/`: リポジトリ共有のhooks置き場

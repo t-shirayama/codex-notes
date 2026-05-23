@@ -2,12 +2,14 @@
 
 > - 種別: official
 > - 参考元: [Agent Skills - Codex](https://developers.openai.com/codex/skills), [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt)
-> - 最終ファクトチェック: 2026-05-04
-> - 確認メモ: skillsの基本方針に加えて作成入口と運用導線を拡充
+> - 最終ファクトチェック: 2026-05-23
+> - 確認メモ: skillの探索場所、progressive disclosure、pluginとの役割分担を確認
 
 ## 概要
 
-`skill` は、繰り返し使う手順を再利用可能な形にしたものです。OpenAIの案内では、再利用できるワークフローとして扱われており、このリポジトリでも「毎回同じ説明を繰り返す作業」を外出しする手段として使います。
+`skill` は、繰り返し使う手順を再利用可能な形にしたものです。公式ドキュメントでは、skill は再利用ワークフローの authoring format、plugin は配布単位として説明されています。このリポジトリでも「毎回同じ説明を繰り返す作業」を外出しする手段として使います。
+
+Codexは最初から全skill本文を読むのではなく、まずskill名、description、ファイルパスだけを見て、必要になったときに `SKILL.md` 本文を読みます。そのため、`description` には「いつ使うか」「いつ使わないか」を短く具体的に書きます。
 
 このページは入口です。実際に設計するときは [skills作成ガイド](./skill-authoring.md) をあわせて見てください。
 
@@ -37,9 +39,14 @@
 
 ## 置き場
 
-- 共有用: `.agents/skills/`
+- リポジトリ共有: `.agents/skills/`
+- 個人用: `$HOME/.agents/skills`
+- 管理者用: `/etc/codex/skills`
+- システム同梱: Codexに最初から含まれるskill
 - テンプレート: `docs/templates/SKILL.md`
 - 詳細ガイド: `docs/operations/skill-authoring.md`
+
+リポジトリ内では、Codexを起動した作業ディレクトリからリポジトリルートまでの `.agents/skills` が探索対象になります。複数人に配布したい、または複数skillやアプリ連携をまとめたい場合は、skillフォルダを直接共有するよりplugin化を検討します。
 
 ## 最低限そろえる項目
 
