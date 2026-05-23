@@ -28,13 +28,10 @@
 - [MCPの運用方針](./operations/mcp.md)
 - [hooksの運用方針](./operations/hooks.md)
 
-## Archive
-
-- [2026-05-04 codex-memoレビュー対応PLAN](./archive/plans/2026-05-04-codex-memo-review-plan.md)
-
 ## Curation
 
 - [AGENTS.md設計パターン集](./curation/agents-md-patterns.md)
+- [Codex運用の重要ポイント](./curation/codex運用の重要ポイント.md)
 - [複数エージェント運用メモ](./curation/multi-agent-workflows.md)
 
 ## Templates
@@ -51,10 +48,6 @@
 ## Repository Skills
 
 - [URL To Markdown Summary](../.agents/skills/url-to-markdown-summary/SKILL.md)
-
-## Alternatives
-
-- [Gemini API × Aider（代替案）](./alternatives/gemini-api-aider.md)
 
 ## Examples
 

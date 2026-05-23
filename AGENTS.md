@@ -29,10 +29,17 @@ AIは「読みやすさ」「再利用しやすさ」「情報源の明確さ」
 - `docs/operations/`: `AGENTS.md`、`skills`、`hooks` などの運用資産
 - `docs/curation/`: Qiita / Zenn / ブログ知見の再編集メモ
 - `docs/templates/`: 再利用用テンプレート
-- `docs/alternatives/`: Codex以外の比較・代替案
 - `examples/`: 実例
 - `.codex/hooks/`: リポジトリ共有のhooks置き場
 - `.agents/skills/`: リポジトリ共有のskills置き場
+
+## Naming Rules
+
+- 新規のフォルダ名・記事ファイル名は、読者に意味が伝わりやすい日本語を優先する
+- `README.md`、`AGENTS.md`、`SKILL.md`、`context.json` など、ツールや慣例で意味が決まっている名前は維持する
+- 製品名、API名、コマンド名は英字のまま残し、日本語の助詞や説明語で補う
+- 既存の英語名を変更するときは、`README.md`、`docs/SUMMARY.md`、記事台帳のリンクを同時に更新する
+- URL共有や外部参照が多い記事は、リンク切れの影響を確認してからリネームする
 
 ## Writing Rules
 
@@ -70,7 +77,7 @@ AIは「読みやすさ」「再利用しやすさ」「情報源の明確さ」
 - 参考元がある記事は本文と記事台帳のファクトチェック日が一致しているか
 - 新規記事は1ファイル1トピックになっているか
 - 公式情報と外部記事の意見を混ぜていないか
-- 完了済みの `PLAN.md` は `docs/archive/plans/` に移したか
+- 完了済みの `PLAN.md` は削除するか、後で参照する理由がある場合だけ `docs/archive/plans/` に移したか
 
 ## Summary Rules
 

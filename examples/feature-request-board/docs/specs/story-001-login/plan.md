@@ -19,4 +19,4 @@
 
 ## Notes
 
-このファイルは、完了後に `docs/archive/plans/` へ移すルート `PLAN.md` ではなく、story単位の作業計画例です。
+このファイルは、完了後に削除または `docs/archive/plans/` へ移すルート `PLAN.md` ではなく、story単位の作業計画例です。

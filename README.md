@@ -28,6 +28,7 @@ Codexを日本語で学び、実務で使いこなすためのメモリポジト
 ### 運用を整える
 
 - [公式ベストプラクティス要約](./docs/official/best-practices.md)
+- [Codex運用の重要ポイント](./docs/curation/codex運用の重要ポイント.md)
 - [Webアプリ開発スターター](./docs/workflows/web-app-codex-starter.md)
 - [AGENTS.mdの運用方針](./docs/operations/agents-md.md)
 - [skillsの追加基準](./docs/operations/skills.md)
@@ -95,7 +96,7 @@ Webアプリを初めからCodexで開発するなら、`examples/web-app-starte
 
 記事を増やしてきたら、`docs/operations/article-registry.md` に参考元と最終ファクトチェック日を残しておくと、どこを再確認すべきか追いやすくなります。
 
-作業中の計画だけをルートの `PLAN.md` に置き、完了済みの計画は `docs/archive/plans/` に移します。
+作業中の計画だけをルートの `PLAN.md` に置きます。完了済みの計画は削除し、後で参照する理由がある場合だけ `docs/archive/plans/` に移します。
 
 ## 設定ファイル
 

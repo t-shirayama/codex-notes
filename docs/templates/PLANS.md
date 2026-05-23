@@ -1,6 +1,6 @@
 # PLANS.md
 
-> 作業中の計画だけをルートの `PLAN.md` に置く。完了後は `docs/archive/plans/YYYY-MM-DD-topic.md` に移動する。
+> 作業中の計画だけをルートの `PLAN.md` に置く。完了後は削除し、後で参照する理由がある場合だけ `docs/archive/plans/YYYY-MM-DD-topic.md` に移動する。
 
 ## Goal
 
