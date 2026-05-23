@@ -2,12 +2,14 @@
 
 > - 種別: operations
 > - 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt), [Codex CLI](https://developers.openai.com/codex/cli)
-> - 最終ファクトチェック: 2026-05-08
-> - 確認メモ: `examples/` 削除に合わせて、必要な構成例を本文に集約
+> - 最終ファクトチェック: 2026-05-23
+> - 確認メモ: `examples/` との重複を抑えつつ、本文にも最小構成とカスタマイズ方針を掲載
 
 ## 概要
 
 WebアプリをCodexで作り始める前に、要件、設計、環境変数、テスト、レビュー観点を先に揃えるためのスターターです。実装コードを生成する前に、Codexが参照できる土台を作ることで、毎回の説明を短くし、差分レビューもしやすくします。
+
+実際にコピーして使うテンプレートは `examples/web-app-starter/` に置き、このページでは考え方とカスタマイズ方針を説明します。
 
 このページはスタック非依存です。Next.js、Vite、Rails、Djangoなど、具体的な技術はプロジェクト側で選びます。
 

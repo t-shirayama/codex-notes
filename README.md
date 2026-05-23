@@ -14,7 +14,7 @@ Codexを日本語で学び、実務で使いこなすためのメモリポジト
 
 1. [VS Codeで始めるCodex](./docs/getting-started/vscode-codex.md) から読む
 2. 自分のプロジェクトに合う [AGENTS.mdテンプレート](./docs/templates/AGENTS.md) をコピーして調整する
-3. 繰り返す作業があれば [URL To Markdown Summary](./.agents/skills/url-to-markdown-summary/SKILL.md) や [SKILL.mdテンプレート](./docs/templates/SKILL.md) を参考に skill 化する
+3. 繰り返す作業があれば [skillsの運用方針](./docs/operations/skills.md)、[skills作成ガイド](./docs/operations/skill-authoring.md)、[SKILL.mdテンプレート](./docs/templates/SKILL.md) を参考に skill 化する
 4. 公式情報を見直したら [記事台帳](./docs/operations/article-registry.md) の日付とメモを更新する
 5. Webアプリをゼロから始めるときは [Webアプリ開発スターター](./docs/workflows/web-app-codex-starter.md) と [Web App Starter](./examples/web-app-starter/README.md) を確認する
 
@@ -30,10 +30,10 @@ Codexを日本語で学び、実務で使いこなすためのメモリポジト
 - [Codex運用の重要ポイント](./docs/curation/codex運用の重要ポイント.md)
 - [Codex開発ルールチェックリスト](./docs/best-practices/development-rules.md)
 - [AGENTS.mdの運用方針](./docs/operations/agents-md.md)
-- [skillsの追加基準](./docs/operations/skills.md)
+- [skillsの運用方針](./docs/operations/skills.md)
 - [skills作成ガイド](./docs/operations/skill-authoring.md)
 - [MCPの運用方針](./docs/operations/mcp.md)
-- [hooksの追加基準](./docs/operations/hooks.md)
+- [hooksの運用方針](./docs/operations/hooks.md)
 - [記事台帳](./docs/operations/article-registry.md)
 - [公式要約テンプレート](./docs/templates/official-summary.md)
 - [外部知見テンプレート](./docs/templates/curation-summary.md)
@@ -50,7 +50,7 @@ Codexを日本語で学び、実務で使いこなすためのメモリポジト
 
 このリポジトリでは、共有skillを `.agents/skills/` に置いています。
 使いたいときは、skill名を明示して依頼すると発火しやすくなります。
-作る側の判断基準は [skillsの追加基準](./docs/operations/skills.md) と [skills作成ガイド](./docs/operations/skill-authoring.md) にまとめています。
+作る側の判断基準は [skillsの運用方針](./docs/operations/skills.md) と [skills作成ガイド](./docs/operations/skill-authoring.md) にまとめています。
 
 ### URL要約skillの例
 
