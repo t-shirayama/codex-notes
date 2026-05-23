@@ -1,9 +1,9 @@
 # 最初の1セッションの進め方
 
 > - 種別: official
-> - 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [OpenAI Prompting guide](https://developers.openai.com/api/docs/guides/prompting)
-> - 最終ファクトチェック: 2026-05-08
-> - 確認メモ: 1タスク1スレッド、計画先行、プロンプト要素を再確認
+> - 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Prompting](https://developers.openai.com/api/docs/guides/prompting)
+> - 最終ファクトチェック: 2026-05-23
+> - 確認メモ: 1タスク1スレッド、計画先行、現行Promptingリンクを確認
 
 ## 概要
 
@@ -57,4 +57,4 @@ Codexを最初から上手く使うコツは、いきなり大きい依頼を投
 このページは以下の参考元に基づいて整理しています。未確認の推測は含めていません。
 
 - [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
-- [OpenAI Prompting guide](https://developers.openai.com/api/docs/guides/prompting)
+- [Prompting](https://developers.openai.com/api/docs/guides/prompting)

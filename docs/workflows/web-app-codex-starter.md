@@ -89,7 +89,7 @@ web-app/
 - APIやDBに触るなら、`api.md` と `data-model.md` も更新対象にする
 - 環境変数を増やすなら、`.env.example` と `environment.md` を同時に更新する
 - 認証や権限に触るなら、e2eまたは統合テスト観点を追加する
-- 完了済みの作業計画は、必要に応じて `docs/archive/plans/` へ移す
+- 完了済みの作業計画は削除し、後で参照する理由がある場合だけ `docs/archive/plans/` へ移す
 
 ## 具体例
 

@@ -2,23 +2,16 @@
 
 > - 種別: official
 > - 参考元: [Agent Skills - Codex](https://developers.openai.com/codex/skills), [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt)
-> - 最終ファクトチェック: 2026-05-08
-> - 確認メモ: 旧作成ガイドの内容を統合し、運用方針と作成手順を1ページに集約
+> - 最終ファクトチェック: 2026-05-23
+> - 確認メモ: skillの探索場所、progressive disclosure、pluginとの役割分担を確認
 
 ## 概要
 
-`skill` は、繰り返し使う手順を再利用可能な形にしたものです。OpenAIの案内では、再利用できるワークフローとして扱われており、このリポジトリでも「毎回同じ説明を繰り返す作業」を外出しする手段として使います。
+`skill` は、繰り返し使う手順を再利用可能な形にしたものです。公式ドキュメントでは、skill は再利用ワークフローの authoring format、plugin は配布単位として説明されています。このリポジトリでも「毎回同じ説明を繰り返す作業」を外出しする手段として使います。
 
-このページでは、追加基準、作成手順、保守方法までを1つにまとめます。細かい作成ルールを別記事に分けすぎると参照先が散るため、skill関連の判断はまずこのページを見ます。
+Codexは最初から全skill本文を読むのではなく、まずskill名、description、ファイルパスだけを見て、必要になったときに `SKILL.md` 本文を読みます。そのため、`description` には「いつ使うか」「いつ使わないか」を短く具体的に書きます。
 
-## 役割分担
-
-- `AGENTS.md`: 毎回守ってほしい恒久ルール
-- `skill`: 会話から呼び出したい再利用手順
-- `hook`: 実行前後の定型チェックや補助処理
-- `plugin`: 複数skillや連携設定をまとめて配布する単位
-
-恒久ルールを skill に入れると、必要な場面でしか読まれません。反対に、特定の作業だけで使う長い手順を `AGENTS.md` に入れると、毎回のコンテキストが重くなります。
+このページは入口です。実際に設計するときは [skills作成ガイド](./skill-authoring.md) をあわせて見てください。
 
 ## 何に向いているか
 
@@ -36,20 +29,24 @@
 
 恒久ルールは `AGENTS.md`、定型チェックは `hooks`、配布単位としてまとめたいものは `plugin` を優先します。
 
-## 追加する判断基準
+## このリポジトリでの基本方針
 
-次の条件がそろったら skill 化を検討します。
-
-- 同じ依頼を2回以上繰り返している
-- 入力が定型化できる
-- 出力の品質基準を文章で説明できる
-- 手順を固定すると早くなる
-- 他の人にも再利用してほしい
+1. まず文書で手順を安定させる
+2. 入力、出力、判断基準を短く固定する
+3. 1 skill = 1業務に絞る
+4. 実例で試してから共有skillにする
+5. 追加後は関連ドキュメントも更新する
 
 ## 置き場
 
-- 共有用: `.agents/skills/`
+- リポジトリ共有: `.agents/skills/`
+- 個人用: `$HOME/.agents/skills`
+- 管理者用: `/etc/codex/skills`
+- システム同梱: Codexに最初から含まれるskill
 - テンプレート: `docs/templates/SKILL.md`
+- 詳細ガイド: `docs/operations/skill-authoring.md`
+
+リポジトリ内では、Codexを起動した作業ディレクトリからリポジトリルートまでの `.agents/skills` が探索対象になります。複数人に配布したい、または複数skillやアプリ連携をまとめたい場合は、skillフォルダを直接共有するよりplugin化を検討します。
 
 ## 最低限そろえる項目
 
@@ -64,47 +61,14 @@
 
 `description` と `Trigger` は特に重要です。`description` は Codex が暗黙的に skill を選ぶ判断材料になるため、使う場面と使わない場面を短く具体的に書きます。
 
-## 作成フロー
+## 追加フロー
 
 1. 繰り返し作業を見つける
 2. 先に `docs/operations/` などで手順を文章化する
-3. 入力、出力、対象外を固定する
-4. `docs/templates/SKILL.md` をベースに `SKILL.md` を作る
-5. `.agents/skills/<skill-name>/` に配置する
-6. 実例で1回以上試す
-7. `README.md` と `docs/SUMMARY.md` の導線を更新する
-8. 参考元を持つ記事作成系なら `docs/operations/article-registry.md` も更新する
-
-いきなり skill にせず、まず文章で手順を安定させます。3回くらい同じ流れで使えたら、skill に切り出しやすくなります。
-
-## 書き方のコツ
-
-### 1 skill = 1業務に絞る
-
-要約、翻訳、レビュー、公開準備までを1つに詰め込むと、発火条件も出力品質もぶれやすくなります。たとえば「公式URLを保存用Markdown記事にする」と「既存記事をファクトチェックする」は近い作業ですが、更新対象が違うなら手順を分けるか、Steps内で明確に分岐させます。
-
-### Trigger を自然文で書く
-
-skill名を明示した依頼だけでなく、自然文でも使いどころが伝わるようにします。
-
-悪い例:
-
-- URLを処理する
-
-良い例:
-
-- OpenAI公式URLやQiita / ZennのURLを受け取り、保存用Markdown記事にまとめるとき
-- 既存記事を参考元URLで再確認し、本文とファクトチェック日を更新するとき
-
-### Steps は命令形で書く
-
-読む人が手順を追える形にします。
-
-1. URLの種類を判定する
-2. 参考元の優先順位を決める
-3. 出力テンプレートを選ぶ
-4. 本文を構成する
-5. 保存先と更新対象を提案する
+3. `docs/templates/SKILL.md` をベースに skill 化する
+4. `.agents/skills/<skill-name>/` に配置する
+5. `README.md` と `docs/SUMMARY.md` の導線を更新する
+6. 必要なら `docs/operations/article-registry.md` も更新する
 
 ## このリポジトリで使える具体例
 
@@ -127,10 +91,6 @@ skill名を明示した依頼だけでなく、自然文でも使いどころが
 - `最終ファクトチェック` を更新する
 - `docs/operations/article-registry.md` のメモも更新する
 
-## よいskillと悪いskill
-
-よい skill は、入力、出力、手順、参考元、更新対象が明確です。悪い skill は、複数業務をまとめすぎていたり、`AGENTS.md` や `hook` と役割が重複していたり、Example がなく使いどころが読めなかったりします。
-
 ## 判断に迷ったときの目安
 
 - 毎回守るルールなら `AGENTS.md`
@@ -142,16 +102,12 @@ skill名を明示した依頼だけでなく、自然文でも使いどころが
 
 毎回「参考元、要点、実務での意味、短い例」を揃えて公式要約を書いているなら、その手順は `skill` 候補です。逆に「常に日本語で答える」「変更後はテストを提案する」のような恒久ルールは `AGENTS.md` 向きです。
 
-## 保守の進め方
+## 次に読むページ
 
-skill は作って終わりではありません。次の観点で見直します。
-
-- 今も同じ手順で使えるか
-- `description` と実際の使われ方がずれていないか
-- 参考元や関連テンプレートが古くなっていないか
-- READMEや目次から辿れるか
-
-既存skillを更新したら、必要に応じてサンプル例や周辺ドキュメントも一緒に直します。
+- [skills作成ガイド](./skill-authoring.md)
+- [SKILL.mdテンプレート](../templates/SKILL.md)
+- [AGENTS.mdの運用方針](./agents-md.md)
+- [hooksの運用方針](./hooks.md)
 
 ## 参考元
 

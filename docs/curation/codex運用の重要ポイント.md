@@ -1,0 +1,192 @@
+# Codex運用の重要ポイント
+
+> - 種別: curation
+> - 参考元: [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices), [Prompt engineering](https://developers.openai.com/api/docs/guides/prompt-engineering), [Prompting](https://developers.openai.com/api/docs/guides/prompting), [Review - Codex app](https://developers.openai.com/codex/app/review), [OpenAI による Codex の使用方法](https://openai.com/ja-JP/business/guides-and-resources/how-openai-uses-codex/), [Codex を完全に理解する会](https://zenn.dev/microsoft/articles/codex_fully_understood), [人間は意図、AIは実装：Codexが導く「要件を伝えるだけ」のAI駆動開発ワークフロー](https://developers.cyberagent.co.jp/blog/archives/62010/), [CodexのBestPracticeを学ぶ会](https://zenn.dev/microsoft/articles/codex_best_practice)
+> - 最終ファクトチェック: 2026-05-23
+> - 確認メモ: 公式Best Practices、Prompt engineering、Review導線、OpenAIの社内活用事例、Zenn解説、CyberAgentの実践記事を確認し、重複記事の要点を統合
+
+## 概要
+
+Codexは、単発のコード生成ツールとして使うよりも、リポジトリの文脈、作業ルール、検証手順を与えて育てるほど安定します。
+
+公式ドキュメントでは、プロンプト、計画、`AGENTS.md`、設定、テスト、MCP、skills、automations、セッション管理が主要な運用軸として整理されています。OpenAIの活用事例や外部記事は、それらを実務に落とすときの具体例として読むと使いやすいです。
+
+## まず押さえる結論
+
+- Codexには「何を作るか」だけでなく、「どの文脈で」「何を守り」「何で完了とするか」を渡す
+- 複雑な作業は、実装前に計画、質問、調査を挟む
+- 毎回の説明は `AGENTS.md`、テンプレート、skills に外出しする
+- コード生成だけで終えず、テスト、差分確認、レビューまで同じ流れに含める
+- 外部情報が必要な作業は、手貼りではなくMCPや構造化ファイルで扱う
+- 安定した定型作業だけを自動化し、まだ揺れている手順は文書化から始める
+
+## 公式情報から見た基本原則
+
+### 1. プロンプトはIssueのように書く
+
+Codexへの依頼は、GitHub IssueやPR説明に近い形で書くと安定します。目的、対象ファイル、制約、完了条件を分けると、Codexが余計な推測をしにくくなります。
+
+### 基本要素
+
+- **目的:** 何を達成したいか、なぜ今やるか
+- **対象:** 関連ファイル、参考ドキュメント、エラー内容
+- **制約:** 変えてはいけない設計、守る規約、禁止事項
+- **完了条件:** テスト、動作確認、差分説明、レビュー観点
+
+#### 具体例
+
+```txt
+目的:
+請求履歴画面で、失敗した決済だけを絞り込めるようにする。
+
+対象:
+@src/pages/BillingHistory.tsx
+@src/api/billing.ts
+
+制約:
+既存のAPIレスポンス形式は変えない。
+UIコンポーネントは既存のFilterSelectを使う。
+
+完了条件:
+失敗ステータスで絞り込める。
+関連するユニットテストを追加する。
+変更差分をレビュー観点つきで要約する。
+```
+
+### 2. 難しい作業は計画から始める
+
+大きな変更、曖昧な要件、影響範囲が広い作業では、いきなり実装させずに計画から始めます。公式Best PracticesではPlan mode、質問による要件整理、実行計画テンプレートの利用が紹介されています。
+
+実務では、最初に「実装しないで、影響範囲と手順だけ出して」と頼むだけでも効果があります。人間が意図を確認してから実装へ進めるため、手戻りが減ります。
+
+### 3. テストとレビューまで依頼に含める
+
+コード生成だけで終わらせず、テスト追加、関連チェックの実行、差分レビューまで含めると品質が安定します。Codex app では差分パネルで変更を確認でき、`/review` を使うと未コミット変更、base branchとの差分、特定コミットなどをレビュー対象にできます。
+
+実装依頼とレビュー依頼を分けると、Codexに「作る視点」と「壊れていないか確認する視点」を切り替えさせやすくなります。チームでレビュー観点を揃える場合は、`code_review.md` のような補助ドキュメントを作り、`AGENTS.md` から参照します。
+
+### 4. `AGENTS.md` は毎回の指示を減らすために使う
+
+`AGENTS.md` は、Codexに読ませるリポジトリ用の運用説明です。ディレクトリ構成、テストコマンド、命名規則、レビュー観点、触ってはいけない範囲、完了条件を入れておくと、毎回のプロンプトが短くなります。
+
+長くなりすぎた場合は、`AGENTS.md` 本体を短く保ち、レビュー観点、設計方針、リリース手順のような補助ドキュメントへ分けます。
+
+### 5. 設定と権限は小さく始める
+
+Codexの安定性は、モデルだけでなく実行環境にも左右されます。作業ディレクトリ、依存関係、テストコマンド、sandbox mode、approval policy、MCP設定がずれていると、出力品質も落ちます。
+
+最初は権限を狭くし、信頼できるリポジトリや繰り返し実行する作業だけ段階的に広げます。環境エラーが出たら、その場限りの回避ではなく、セットアップ手順や `AGENTS.md` に戻して改善します。
+
+## 実務で効く使いどころ
+
+### 1. コード理解とオンボーディング
+
+OpenAIの活用事例では、Codexは不慣れなコード領域の理解、データフローの把握、インシデント調査、ドキュメント不足の発見に使われています。
+
+初見のリポジトリでは、いきなり修正を依頼するより、まず「この機能の入口、主要モジュール、データの流れ、テスト位置を説明して」と頼むと安全です。
+
+### 2. リファクタリングと移行
+
+複数ファイルにまたがる移行、古いAPI呼び出しの置換、巨大ファイルの分割、テストしやすい構造への変更はCodexと相性がよい領域です。ただし、検索置換では見えない依存関係を扱うため、必ず計画、差分確認、テストをセットにします。
+
+### 3. テストカバレッジの補強
+
+Codexは、空入力、最大値、失敗パス、まれだが正当な状態のような見落としやすいケースを洗い出す用途に向いています。バグ修正時は「修正して」だけでなく、「再発防止になるテストも追加して」と依頼します。
+
+### 4. 作業の再開と軽量バックログ
+
+OpenAIの事例やZenn解説では、Codexのタスクキューを軽量なバックログとして使う発想が紹介されています。途中のアイデア、小さな修正、あとで戻りたい探索タスクをCodexに預けると、中断が多い日でも流れを保ちやすくなります。
+
+この使い方では、完璧なPRを一度で作らせるより、下書き、調査、候補案として扱う姿勢が重要です。
+
+## CyberAgent記事から学ぶ構造化の工夫
+
+CyberAgentの記事は、小規模開発でCodexを使うときの具体的な設計例として参考になります。中心にあるのは「人間がWhy/Whatを決め、AIがHowを実行する」という役割分担です。
+
+### 取り入れやすい要素
+
+- 要件を先に書き、実装前に合意できる状態にする
+- `AGENTS.md` や `project-rules.md` に自動生成ルールを寄せる
+- UIワイヤーフレームやMermaid図で、画面や状態遷移を視覚化する
+- `context.json` で、AIが参照すべき情報や作業履歴を構造化する
+- 小規模開発では、重すぎる工程を省き、必要な成果物だけに絞る
+
+このリポジトリでは、同じ考え方を [Webアプリ開発スターター](../workflows/web-app-codex-starter.md) と `examples/web-app-starter/` に寄せています。新規開発では、いきなり実装するより、`vision.md`、`requirement.md`、`plan.md`、`context.json` を薄く作ってからCodexに渡すと進めやすくなります。
+
+## MCP、skills、automationsの使い分け
+
+### MCP
+
+リポジトリ外にある最新情報、Issue、仕様、ログ、外部サービスの状態をCodexに見せたいときに使います。毎回コピーして貼る情報、頻繁に変わる情報、ツールとして実行させたい情報があるならMCP候補です。
+
+最初から全ツールをつなぐのではなく、手作業を確実に減らす1つか2つから始めます。
+
+### skills
+
+同じ手順を何度も説明しているなら、skill化の候補です。リリースノート、ログ調査、PRレビュー、移行計画、ドキュメント要約のように、入力、出力、判断基準がある作業に向いています。
+
+### automations
+
+安定した定型作業を定期実行したいときに使います。CI失敗の確認、最近のコミット要約、リリースノート下書き、定期的な品質チェックのような作業が候補です。
+
+まだ人間の判断が多い作業を急いで自動化すると、修正コストが増えます。先にskillや手順書として安定させてから、自動化へ進めます。
+
+## セッション管理と並列作業
+
+Codexのセッションは、単なるチャット履歴ではなく、判断と作業の文脈を持つ作業単位です。基本は1タスク1スレッドにします。同じ問題の続きなら同じスレッドを使い、別の方向に分岐するときだけforkします。
+
+複数の作業を並行する場合は、同じファイルを複数スレッドで触らせないようにします。探索、テスト、調査のように境界がはっきりした作業は、サブエージェントや別スレッドに切り出すと管理しやすくなります。
+
+## よくある失敗
+
+- 毎回のプロンプトに恒久ルールを詰め込み続ける
+- テストやビルドの実行方法を教えず、Codexが自分の成果を確認できない
+- 複雑な作業なのに計画を省く
+- ワークフローを理解する前に権限を広げすぎる
+- 同じファイルに対して複数の作業スレッドを走らせる
+- 手動で安定していない作業を急いでautomation化する
+- プロジェクト単位で1スレッドにまとめ、文脈を肥大化させる
+
+## 判断基準
+
+### 直接依頼してよい作業
+
+- 変更範囲が小さい
+- 対象ファイルが明確
+- 完了条件が1つか2つで済む
+- テストや確認方法がすでに分かっている
+
+### 計画から始める作業
+
+- 複数ファイルや複数レイヤーにまたがる
+- 仕様が曖昧
+- 既存設計との整合性が重要
+- 失敗したときの影響が大きい
+
+### `AGENTS.md` やskillに移す作業
+
+- 同じ説明を2回以上している
+- レビュー観点や出力形式を毎回指定している
+- チームで同じ手順を共有したい
+- 成功パターンと失敗パターンが見えてきた
+
+## このリポジトリでの使い方
+
+1. 初めて使う人は [VS Codeで始めるCodex](../getting-started/vscode-codex.md) を読む
+2. 運用全体を知りたい人はこのページで、プロンプト、計画、検証、再利用資産の関係を見る
+3. `AGENTS.md` を整えたい人は [AGENTS.mdの運用方針](../operations/agents-md.md) を読む
+4. 新規Webアプリを始める人は [Webアプリ開発スターター](../workflows/web-app-codex-starter.md) を使う
+5. 繰り返す作業が見えたら [skillsの運用方針](../operations/skills.md) と [skills作成ガイド](../operations/skill-authoring.md) に進む
+
+## 参考元
+
+このページは以下の参考元に基づいて整理しています。未確認の推測は含めていません。公式情報と外部記事の解釈が分かれる場合は、公式情報を優先します。
+
+- [OpenAI Codex Best Practices](https://developers.openai.com/codex/learn/best-practices)
+- [Prompt engineering](https://developers.openai.com/api/docs/guides/prompt-engineering)
+- [Prompting](https://developers.openai.com/api/docs/guides/prompting)
+- [Review - Codex app](https://developers.openai.com/codex/app/review)
+- [OpenAI による Codex の使用方法](https://openai.com/ja-JP/business/guides-and-resources/how-openai-uses-codex/)
+- [Codex を完全に理解する会](https://zenn.dev/microsoft/articles/codex_fully_understood)
+- [人間は意図、AIは実装：Codexが導く「要件を伝えるだけ」のAI駆動開発ワークフロー](https://developers.cyberagent.co.jp/blog/archives/62010/)
+- [CodexのBestPracticeを学ぶ会](https://zenn.dev/microsoft/articles/codex_best_practice)
