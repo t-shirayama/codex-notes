@@ -21,6 +21,7 @@
 - [skills作成ガイド](./operations/skill-authoring.md)
 - [MCPの運用方針](./operations/mcp.md)
 - [hooksの運用方針](./operations/hooks.md)
+- [Codex CLIスラッシュコマンド](./operations/slash-commands.md)
 
 ## Workflows
 
